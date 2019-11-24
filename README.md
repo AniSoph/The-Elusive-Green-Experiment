@@ -6,7 +6,7 @@ Research question: Is there a preference-action gap in green consumption (higher
     H1: External influences have an effect on the delivery decision. Without external influences participants are more likely to choose a 1-day delivery.
 
     H1a: The probability of choosing a 7-day delivery increases when individuals are facing social influences.   
-        Underlying theory: herd behaviour (Chen (2008); Salazar et al. (2013); Tsarenko et al. (2013))
+        Underlying theory: herd behaviour (White et al. (2019); Chen (2008); Salazar et al. (2013); Tsarenko et al. (2013))
         Treatment: A chart indicating that most of their peers choose an eco-friendly delivery. 
 
     H1b: The probability of choosing a 7-day delivery increases when individuals are facing informational influences.  
