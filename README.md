@@ -2,6 +2,7 @@
 
 
 In recent years the rise of social movements and political parties, concerned with climate protection, indicate a change in the  awareness of environmental issues. This greater awareness is reflected in an increase in environmentally friendly behaviour. People start caring more often about waste recycling or using environmentally friendly mobility.
+
 However, not everyone is actually doing that. There is a notable gap between people saying that they want to act sustainable and how they actually behave as a consumer ((PROVE) consumer attitude-behaviour gap).
 Customers may do small things to have a good feeling of being environmentally friendly and use this act as a justfication for subsequent non-environmentally friendly behaviour (QUOTE).
 One example is the purchase of ecofriendly products like recycled clothes in an online store instead of buying it in a local store.
@@ -28,6 +29,10 @@ Our research question: Is there a preference-action gap in green consumption and
     H2: Informational influences are reducing the preference-action gap to a greater extend than social influences.
         Underlying Theory: (Chen (2008))
     
+
+EXPERIMENT:
+The participants of the study will be rewarded for their efforts by a lottery for 
+
 
 
 Literature: 
