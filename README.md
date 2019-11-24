@@ -32,7 +32,8 @@ Experimental stages:
 - Introduction to the experiment (see `introduction.html`);
 - Survey (see `survey.html`);
 - Product choice;
-- Delivery choice (treatments are being introduced).
+- Delivery choice (treatments are being introduced);
+- Feedback.
 
 The participants of the study will be rewarded for their efforts with a lottery participation.
 
