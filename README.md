@@ -25,8 +25,8 @@ In order to test whether social influences or informational influences are more 
 |*H2*. Informational influences are reducing the preference-action gap to a greater extend than social influences. |Chen (2008)||
     
 #### EXPERIMENTAL DESIGN:
-The abovementioned hypotheses are tested using *experimental methodology* (see Table 1).
-The respondents are presented with a situation when they are to become a customers of an online shop.
+The hypotheses mentioned above are tested using *experimental methodology* (see Table 1).
+The respondents are presented with a situation where they are to become a customers of an online shop.
 
 Experimental stages:
 - Introduction to the experiment (see `introduction.html`);
