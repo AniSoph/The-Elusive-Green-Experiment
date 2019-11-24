@@ -5,7 +5,7 @@ Research question: Is there a preference-action gap in green consumption (higher
 Literature: 
 
 Yi-Fen Chen,
-Herd behavior in purchasing books online,
+"Herd behavior in purchasing books online",
 Computers in Human Behavior,
 Volume 24, Issue 5,
 2008,
