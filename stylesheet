@@ -1,0 +1,32 @@
+body {
+  background-color:#ffffff;
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  color: #6b6b6b;
+  font-family: Phosphate;
+}
+
+p {
+  font-size: 15px;
+  text-align: center;
+  color: #23354d;
+  font-family: Silom;
+}
+
+#doneButton {
+  font-size: 15px;
+  color: #48833f;
+  font-family: Ayuthaya;
+  padding: 10px 24px;
+  border: 1px solid #4CAF50;
+  cursor: pointer;
+}
+
+#doneButton:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
