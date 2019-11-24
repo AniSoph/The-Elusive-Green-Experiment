@@ -4,6 +4,15 @@
 In recent years the rise of social movements and political parties, concerned with climate protection, indicate a change in the  awareness of environmental issues. This greater awareness is reflected in more. 
 
 
+	Probably also a change in preferences towards environmental friendly behavior 
+	However, there is a notable gap between people saying they want to act sustainable and how they actually behave as a consumer. (PROVE) consumer attitude-behaviour gap
+Important because: Changes in the consumer behavior (market demand), have a big effect on the products or services companies offer.
+	Is there a preference-action gap (higher preference than action) and if so can this gap be reduced by specific stimuli? 
+(More about the effectiveness of specific treatments on decreasing the gap) 
+
+
+
+
 
 Research question: Is there a preference-action gap in green consumption and if so, can this gap be reduced by specific stimuli? 
 
