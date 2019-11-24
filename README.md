@@ -32,7 +32,8 @@ Our research question: Is there a preference-action gap in green consumption and
     
 
 EXPERIMENT:
-The participants of the study will be rewarded for their efforts by a lottery for 
+The participants of the study will be rewarded for their efforts with a lottery participation.
+
 
 
 
