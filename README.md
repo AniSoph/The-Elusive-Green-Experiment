@@ -40,7 +40,7 @@ The participants of the study will be rewarded for their efforts with a lottery 
 ***The HTML-files are accompanied with the respected CSS- and JS-files.***
 
 
-###### REFERENCES: 
+#### REFERENCES: 
 
 Yi-Fen Chen,
 "Herd behavior in purchasing books online",
