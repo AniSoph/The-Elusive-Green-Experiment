@@ -67,4 +67,9 @@ Journal of Environmental Psychology,
 Volume 56,
 2018
 
+Caroline L. Noblet, Shannon K. McCoy,
+"Does One Good Turn Deserve Another? Evidence of Domain-Specific Licensing in Energy Behavior",
+Environment and Behavior,
+Volume 50(8),
+2018
 
