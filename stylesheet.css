@@ -9,15 +9,22 @@ body {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
   color: #6b6b6b;
   font-family: Phosphate;
 }
 
-p {
+p1 {
   font-size: 15px;
-  text-align: center;
+  text-align: left;
+  color: #23354d;
+  font-family: Silom;
+}
+
+p2 {
+  font-size: 15px;
+  text-align: left;
   color: #23354d;
   font-family: Silom;
 }
