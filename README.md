@@ -1,7 +1,7 @@
 # The-Elusive-Green-Experiment
 
 
-In recent years the rise of social movements and political parties, concerned with climate protection, indicate a change in the  awareness of environmental issues. This greater awareness is reflected in more ....
+In recent years the rise of social movements and political parties, concerned with climate protection, indicate a change in the  awareness of environmental issues. This greater awareness is reflected in more. 
 
 
 
