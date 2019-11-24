@@ -1,9 +1,8 @@
-# The-Elusive-Green-Experiment
-
+# The Elusive Green Experiment
 
 In recent years the rise of social movements and political parties, concerned with climate protection, indicate a change in the awareness of environmental issues. This greater awareness is reflected in an increase in environmentally friendly behavior. People start caring more often about waste recycling or using environmentally-friendly mobility.
 
-However, not everyone is indeed doing that. There is a notable gap between people saying that they want to act sustainable and how they truly behave as a consumer ((PROVE) consumer attitude-behavior gap).
+However, not everyone is indeed doing that. There is a notable gap between people saying that they want to act sustainable and how they truly behave as a consumer (*PROVE* consumer attitude-behavior gap).
 Customers performing in an environmentally friendly way may use previous environmentally-friendly acts as a justification for subsequent unethical decisions (Mazar & Zhong, 2010).
 
 One example is the purchase of eco-friendly products like recycled clothes in an online store instead of buying it in a local store.
@@ -14,31 +13,34 @@ The present online experiment should, therefore, uncover whether specific stimul
 In order to test whether social influences or informational influences are more effective in increasing environmental friendly behavior, we conducted an experiment about online purchase decisions. The experiment contains two treatments and one control group.
 
 
-Research question: Is there a preference-action gap in green consumption and if so, can this gap be reduced by specific stimuli? 
+**Research question:** *Is there a preference-action gap in green consumption and if so, can this gap be reduced by specific stimuli?*
 
+*Table 1*. An overview of hypotheses, related theoretical constructs, and subsequent treatments
 
-    H1: External influences have an effect on the delivery decision. 
-    Without external influences participants are more likely to choose a 1-day delivery.
-
-    H1a: The probability of choosing a 7-day delivery increases when individuals are facing social influences.   
-        Underlying theory: herd behaviour (White et al. (2019); Chen (2008); Salazar et al. (2013); Tsarenko et al. (2013))
-        Treatment: A chart indicating that most of their peers choose an eco-friendly delivery. 
-
-    H1b: The probability of choosing a 7-day delivery increases when individuals are facing informational influences.  
-        Underlying theory:   
-        Treatment: A chart indicating of how much CO2 could be saved. 
-
-    H2: Informational influences are reducing the preference-action gap to a greater extend than social influences.
-        Underlying Theory: (Chen (2008))
+| HYPOTHESES | UNDERLYING THEORY | TREATMENT |
+| --- | --- | --- |
+|*H1*. External influences have an effect on the delivery decision. Without external influences participants are more likely to choose a 1-day delivery. |
+|*H1a*. The probability of choosing a 7-day delivery increases when individuals are facing social influences. | Herd behaviour (White et al. (2019); Chen (2008); Salazar et al. (2013); Tsarenko et al. (2013) |A chart indicating that most of their peers choose an eco-friendly delivery. |
+|*H1b*. The probability of choosing a 7-day delivery increases when individuals are facing informational influences. ||A chart indicating of how much CO2 could be saved. |
+|*H2*. Informational influences are reducing the preference-action gap to a greater extend than social influences. |Chen (2008)||
     
+#### EXPERIMENTAL DESIGN:
+The abovementioned hypotheses are tested using *experimental methodology* (see Table 1).
+The respondents are presented with a situation when they are to become a customers of an online shop.
 
-EXPERIMENT:
+Experimental stages:
+- Introduction to the experiment (see `introduction.html`);
+- Survey (see `survey.html`);
+- Product choice;
+- Delivery choice (treatments are being introduced).
+
 The participants of the study will be rewarded for their efforts with a lottery participation.
 
 
+***The HTML-files are accompanied with the respected CSS- and JS-files.***
 
 
-REFERENCES: 
+###### REFERENCES: 
 
 Yi-Fen Chen,
 "Herd behavior in purchasing books online",
