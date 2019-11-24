@@ -2,6 +2,12 @@ body {
   background-color:#ffffff;
 }
 
+.outline {
+  display: block;
+  position: relative;
+  border: 1px solid #4CAF50;
+}
+
 h1 {
   font-size: 30px;
   text-align: center;
