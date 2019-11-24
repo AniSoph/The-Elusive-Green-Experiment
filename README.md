@@ -79,3 +79,8 @@ Environment and Behavior,
 Volume 50(8),
 2018
 
+Joanna Goplen, 
+"Dedicated vs. Coerced: Internal and External Motivations to Be Proenvironmental",
+Electronic Theses, Treatises and Dissertations; Florida University,
+2014
+
