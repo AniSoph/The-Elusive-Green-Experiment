@@ -31,6 +31,12 @@ Computers in Human Behavior,
 Volume 24, Issue 5,
 2008
 
+Aaron M. Garvey, Lisa E. Bolton, 
+"Eco-Product Choice Cuts Both Ways: How Pro-Environmental Licensing versus Reinforcement is Contingent upon Environmental Consciousness",
+Journal of Public Policy & Marketing,
+Volume 36(2),
+2017
+
 Yatish Joshi, Zillur Rahman,
 "Factors Affecting Green Purchase Behaviour and Future Research Directions",
 International Strategic Management Review,
@@ -48,5 +54,3 @@ Katherine White, David J. Hardisty, Rishad Habib,
 Harvard Business Review Home,
 July-August Issue,
 2019
-
-
