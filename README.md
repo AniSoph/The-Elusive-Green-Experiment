@@ -16,5 +16,22 @@ Computers in Human Behavior,
 Volume 24, Issue 5,
 2008,
 
+Yatish Joshi, Zillur Rahman,
+"Factors Affecting Green Purchase Behaviour and Future Research Directions",
+International Strategic Management Review,
+Volume 3, Issues 1–2,
+2015,
+
+Helen Arce Salazar, Leon Oerlemans, Saskia van Stroe-Biezen,
+"Social influence on sustainable consumption: evidence froma behavioural experiment",
+International Journal of Consumer Studies,
+Volume 37, Pages 172–180,
+2013
+
+Katherine White, David J. Hardisty, Rishad Habib 
+"The Elusive Green Consumer",
+Harvard Business Review Home,
+July-August Issue,
+2019
 
 
