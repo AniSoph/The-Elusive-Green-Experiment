@@ -49,3 +49,17 @@ Katherine White, David J. Hardisty, Rishad Habib,
 Harvard Business Review Home,
 July-August Issue,
 2019
+
+Yelena Tsarenko, Carla Ferraro, Sean Sands, Colin McLeod,
+"Environmentally conscious consumption: The role of retailers and peers as external influences",
+Journal of Retailing and Consumer Services,
+Volume 20, Issue 3,
+2013
+
+Michael P. Hall, Neil A. Lewis, Phoebe C. Ellsworth,
+"Believing in climate change, but not behaving sustainably: Evidence from a one-year longitudinal study",
+Journal of Environmental Psychology,
+Volume 56,
+2018
+
+
