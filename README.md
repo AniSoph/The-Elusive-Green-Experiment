@@ -1,5 +1,9 @@
 # The Elusive Green Experiment
 
+
+
+
+
 In recent years the rise of social movements and political parties, concerned with climate protection, indicate a change in the awareness of environmental issues. This greater awareness is reflected in an increase in environmentally friendly behavior. People start caring more often about waste recycling or using environmentally-friendly mobility.
 
 However, not everyone is indeed doing that. There is a notable gap between people saying that they want to act sustainable and how they truly behave as a consumer (*PROVE* consumer attitude-behavior gap).
