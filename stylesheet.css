@@ -1,38 +1,33 @@
 body {
-  background-color:#ffffff;
+  background-color: #ffffff;
 }
 
 .outline {
-  display: block;
+  display: block; 
   position: relative;
-  border: 1px solid #4CAF50;
+  border: 2px solid #4CAF50;
+  color: #23354d;
+  font-family: Didot, serif;
+
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
   color: #6b6b6b;
-  font-family: Phosphate;
+  font-family: Didot, serif;
 }
 
 p1 {
-  font-size: 15px;
-  text-align: left;
+  text-align: center;
   color: #23354d;
-  font-family: Silom;
-}
-
-p2 {
-  font-size: 15px;
-  text-align: left;
-  color: #23354d;
-  font-family: Silom;
+  font-family: Didot, serif;
 }
 
 #doneButton {
   font-size: 15px;
   color: #48833f;
-  font-family: Ayuthaya;
+  font-family: Didot, serif;
   padding: 10px 24px;
   border: 1px solid #4CAF50;
   cursor: pointer;
@@ -42,4 +37,3 @@ p2 {
   background-color: #4CAF50; 
   color: white;
 }
-
