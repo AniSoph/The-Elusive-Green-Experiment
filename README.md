@@ -12,7 +12,6 @@ Thus, the current environmental trend does not only affect customers but also su
 The present online experiment should, therefore, uncover whether specific stimuli can convince a customer to use a more eco-friendly delivery choice.
 In order to test whether social influences or informational influences are more effective in increasing environmental friendly behavior, we conducted an experiment about online purchase decisions. The experiment contains two treatments and one control group.
 
-
 **Research question:** *Is there a preference-action gap in green consumption and if so, can this gap be reduced by specific stimuli?*
 
 *Table 1*. An overview of hypotheses, related theoretical constructs, and subsequent treatments
