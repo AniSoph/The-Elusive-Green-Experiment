@@ -18,7 +18,7 @@ h1 {
   font-family: Didot, serif;
 }
 
-p1 {
+.text {
   text-align: center;
   color: #23354d;
   font-family: Didot, serif;
@@ -37,3 +37,29 @@ p1 {
   background-color: #4CAF50; 
   color: white;
 }
+
+#surveyElement{
+  font-size: 15px;
+  text-align: left;  
+  font-family: Didot, serif;
+  color: #23354d;
+}
+
+.sv_qstn .sq-root {
+    font-size: 13px;
+    border: 1px solid gray;
+    border-left: 4px solid #18a689;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+
+}
+.sq-title{
+  font-size: 17px;
+}
+.sq-item{
+  margin: 20px 10px 20px 20px;
+}
+
