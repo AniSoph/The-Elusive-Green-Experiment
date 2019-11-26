@@ -14,19 +14,19 @@ var json = {
                     text: "Strongly Disagree"
                 }, {
                     value: 2,
-                    text: ""
+                    text: "Disagree"
                 }, {
                     value: 3,
-                    text: ""
+                    text: "More disagree, than agree"
                 }, {
                     value: 4,
-                    text: ""
+                    text: "Neutral"
                 }, {
                     value: 5,
-                    text: ""
+                    text: "More agree, than disagree"
                 }, {
                     value: 6,
-                    text: ""
+                    text: "Agree"
                 }, {
                     value: 7,
                     text: "Strongly Agree"
