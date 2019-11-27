@@ -31,6 +31,7 @@ The respondents are presented with a situation when they are to become a custome
 Experimental stages:
 - Introduction to the experiment (see `introduction.html`);
 - Survey (see `survey.html`);
+- Product category choice (-> Clothing, Electronics, Home and Kitchen, Health and Beauty; 2x2 products per category)
 - Product choice;
 - Delivery choice (treatments are being introduced);
 - Feedback.
