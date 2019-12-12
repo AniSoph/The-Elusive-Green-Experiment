@@ -108,7 +108,20 @@ Volume 21(4),
 These instructions will guide you through the installation process and will give some tips on running the experiment. 
 
 ### Prerequisites
-Using your Command line/Terminal install Node.JS. By installing it, you will automatically install `npm` (JavaScript package manager) to be able to run the application on your device. 
+
+For Windows users: 
+
+Go to Node.JS website, specifically - `nodejs.org/en/downloads`, to download Node.JS on your computer. 
+After the download, you will be able to open NodeJS promt. 
+
+
+For MacOS users:
+Using your Terminal install Node.JS. By installing it, you will automatically install `npm` (JavaScript package manager) to be able to run the application on your device. 
+
+```
+pip install node
+
+```
 
 ```
 brew install node
