@@ -102,3 +102,29 @@ Psychological Science,
 Volume 21(4),
 2010
 
+
+## Getting Started with the Experiment 
+
+These instructions will guide you through the installation process and will give some tips on running the experiment. 
+
+### Prerequisites
+Using your Command line/Terminal install Node.JS. By installing it, you will automatically install `npm` (JavaScript package manager) to be able to run the application on your device. 
+
+```
+brew install node
+```
+
+To check if Node.JS is already installed.
+
+```
+node -v
+```
+
+To check if npm is already installed.
+
+```
+npm -v
+```
+
+
+
