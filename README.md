@@ -27,12 +27,19 @@ In order to test whether social influences or informational influences are more 
 #### EXPERIMENTAL DESIGN:
 The abovementioned hypotheses are tested using *experimental methodology* (see Table 1).
 The respondents are presented with a situation when they are to become a customers of an online shop.
+At first, they are asked to complete a short survey about their preferences to use environmentally friendly products. Aferwards they chose a product category that they are most interested in. This choice is included because we expect that the whole experiment gets more realistic when having a scenario that could actually happen. A participant chooses one out of four product categories that he/she is most interested in. They have the chance to choose between "Clothing", "Electronics", "Home and Kitchen" or "Health and Beauty". Independent of their product category choice, they will move to the next stage of the experiment. Here, everyone will get to see 4 products. Two products are exactly the same, they have the same price and the came appearance. They only differ slighly in their desciption saying that one is environmentally friendly and the other is not.
+For instance, a person who chooses the "Clothing" category sees two sweaters and two jeans with the same picture and price. One of each is more environmentally friendly than the other.
+
+Maybe better: 3*2 und dann randomisierte Reihenfolge!
+
+On the next page each participant is randomly assigned to the control or experimental group. In total, there are two experimental groups and one control group. While the controlgroup merely decides for a usual delivery or a fast delivery, the two experimental groups also face a stimuli to influence their decision.
+
 
 Experimental stages:
 - Introduction to the experiment (see `introduction.html`);
 - Survey (see `survey.html`);
-- Product category choice (-> Clothing, Electronics, Home and Kitchen, Health and Beauty; 2x2 products per category)
-- Product choice;
+- Product category choice (-> Clothing, Electronics, Home and Kitchen, Health and Beauty);
+- Product choice (2x2 products per category);
 - Delivery choice (treatments are being introduced);
 - Feedback.
 
