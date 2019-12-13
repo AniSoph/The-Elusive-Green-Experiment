@@ -151,7 +151,7 @@ Navigate to the direction of a project previously downloaded from GitHub.
 ```
 cd [project path]
 ```
-Install the dependencies needed to run the experiment.
+Install the dependencies needed to run the experiment from `package.json` file.
 ```
 npm install
 ```
