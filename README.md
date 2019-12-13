@@ -122,34 +122,42 @@ These instructions will guide you through the installation process and will give
 ### Prerequisites
 
 For Windows users: 
-
-Go to Node.JS website, specifically - `nodejs.org/en/downloads`, to download Node.JS on your computer. 
-After the download, you will be able to open NodeJS promt. 
-
+Go to `Node.js` website, specifically - `nodejs.org/en/downloads`, to download `Node.js` on your computer. 
+After the download, you will be able to open Node.js promt window (`node promt`). 
 
 For MacOS users:
-Using your Terminal install Node.JS. By installing it, you will automatically install `npm` (JavaScript package manager) to be able to run the application on your device. 
-
+Using your Terminal install `Node.js`. By installing it, you will automatically install `npm` (JavaScript package manager) to be able to run the application on your device. 
+Install using `pip install`:
 ```
 pip install node
-
 ```
-
+Install using Homebrew: 
 ```
 brew install node
 ```
-
-To check if Node.JS is already installed.
-
+For both Windows and MacOS users,check if `Node.js` is already installed.
 ```
 node -v
 ```
-
-To check if npm is already installed.
-
+To check if `npm` is already installed.
 ```
 npm -v
 ```
+### Running the Experiment
 
-
+For Windows users, open `node promt` window. 
+For MacOS users, open the Terminal. 
+Navigate to the direction of a project previously downloaded from GitHub.
+```
+cd [project path]
+```
+Install the dependencies needed to run the experiment.
+```
+npm install
+```
+Run the Experiment.
+```
+npm start
+```
+Go to your browser and enter `http://localhost:8080/` - LET THE FUN BEGIN!
 
