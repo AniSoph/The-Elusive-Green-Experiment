@@ -33,6 +33,11 @@ For instance, a person who chooses the "Clothing" category sees two sweaters and
 Maybe better: 3*2 und dann randomisierte Reihenfolge!
 
 On the next page each participant is randomly assigned to the control or experimental group. In total, there are two experimental groups and one control group. While the controlgroup merely decides for a usual delivery or a fast delivery, the two experimental groups also face a stimuli to influence their decision.
+The first experimental group will be confronted with a social-influence stimuli. Here, fictious customer comments are displacyed that show the feedback about customers who are happy with the product and the environmentally friendly delivery choice.
+The second experimental group will instead be confronted with an informational-influence stimuli. We came up with facts about the saved amount of CO2 and other negative effects on the environment.
+After seeing the stimuli, the experimental groups have the same chance as the control group to decide for an environmentally friendly (7 day delivery) or a fast delivery.
+At last, finishes the experiment with a thank you page and has the chance to share feedback about the experiment.
+
 
 
 Experimental stages:
