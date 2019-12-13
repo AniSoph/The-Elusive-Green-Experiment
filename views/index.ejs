@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>INSTRUCTIONS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body style="margin: auto;">
+    <header><% include ./header %></header>
+    <div class="container-fluid">
+      <h1>Welcome!</h1>
+      <br>
+      <div id="instructions">
+        <p>
+          Today you will be participating in .... You will become a customer in a online store, where you suppose to choose your purchase and method of its delivery. You will be given a choice of 4 categories of goods with N-objects in each. In the next step you will be asked to choose a preffered method of delivery. Easy, isn't it?
+        </p>
+        <br>
+        <p class = "text-muted">
+          If you understood the instructions correctly, press the "DONE" button to proceed.
+        </p>
+      </div>
+      <div>
+        <button id = "doneButton"  onclick="location.href ='http://localhost:8080/selectcategory'" class ="btn-success">DONE</button>
+      </div>
+    </div>
+  </body>
+  </html>

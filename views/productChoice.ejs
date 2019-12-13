@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SELECT YOUR PRODUCT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="/stylesheets/style.css"/>
+</head>
+<body style="margin: auto;">
+  <header><% include ./header %></header>
+  <div class="container-fluid">
+    <h1>You just selected the product category: "Here: selected-category_name"
+    </h1>
+    <br>
+    <p>Which of the following products of your chosen category you are most interested in?
+    </p>
+    <br>
+    <br>
+    <p class = "text-muted">
+      Please click on one of products that you would most likely purchase?
+    </p>
+    <br>
+  </div>
+  <div>
+    <button id = "nextButton"  onclick="location.href ='http://localhost:8080/surveyandfeedback'" class ="btn-success">NEXT</button>
+  </div>
+</body>
+</html>
