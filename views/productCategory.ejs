@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
-    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel="stylesheet" href="/stylesheets/style.css"/>
     <style>
     /* Container needed to position the button. Adjust the width as needed */
     .container {
@@ -43,24 +43,27 @@
   <body style="margin: auto;">
     <header><% include ./header %></header>
     <div class="container">
-      <img class = "img" id = "Electronics" src="https://www.howtogeek.com/wp-content/uploads/2019/08/img_5d603e1a30d8f.jpg" alt = "Electronics">
-      <button class = "chooseButton" onclick="location.href ='http://localhost:8080/electronics'">Electronics</button>
+      <img class="img" id="Electronics" src="https://www.howtogeek.com/wp-content/uploads/2019/08/img_5d603e1a30d8f.jpg" alt="Electronics">
+      <button class="chooseButton" onclick="location.href ='http://localhost:8080/electronics'">Electronics</button>
     </div>
     <br>
     <div class="container">
-      <img class = "img" id = "Clothing" src="https://www.cccreationsusa.com/wp-content/uploads/2017/12/clothes-hanging-862x493.jpg" alt = "Clothing">
-      <button class = "chooseButton" onclick="location.href ='http://localhost:8080/clothing'">Clothing</button>
+      <img class="img" id="Clothing" src="https://www.cccreationsusa.com/wp-content/uploads/2017/12/clothes-hanging-862x493.jpg" alt="Clothing">
+      <button class="chooseButton" onclick="location.href ='http://localhost:8080/clothing'">Clothing</button>
     </div>
     <br>
     <div class="container">
-      <img class = "img" id = "Home" src="https://lithub.com/wp-content/uploads/2019/07/used-books-store-2.jpg" alt = "Home">
-      <button class = "chooseButton" onclick="location.href ='http://localhost:8080/home'">Home</button>
+      <img class="img" id="Home" src="https://lithub.com/wp-content/uploads/2019/07/used-books-store-2.jpg" alt="Home">
+      <button class="chooseButton" onclick="location.href ='http://localhost:8080/home'">Home</button>
     </div>
     <br>
     <div class="container">
-      <img class = "img" id = "Cosmetics" src="https://industrywired.com/wp-content/uploads/2018/12/Cosmetics.jpg" alt = "Cosmetics">
-      <button class = "chooseButton" onclick="location.href ='http://localhost:8080/cosmetics'">Cosmetics</button>
+      <img class="img" id="Cosmetics" src="https://industrywired.com/wp-content/uploads/2018/12/Cosmetics.jpg" alt="Cosmetics">
+      <button class="chooseButton" onclick="location.href ='http://localhost:8080/cosmetics'">Cosmetics</button>
     </div>
     <br>
+    <footer>
+      <% include ./footer %>
+    </footer>
   </body>
   </html>
