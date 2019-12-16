@@ -8,13 +8,19 @@
     <script src="https://surveyjs.azureedge.net/1.1.22/survey.jquery.js"></script>
     <link href="https://surveyjs.azureedge.net/1.1.22/modern.css" type="text/css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/style.css"/>
   </head>
   <body style="margin: auto;">
     <header><% include ./header %></header>
-    <div id="surveyElement"></div>
+    <div style="padding:100px" id="surveyElement"></div>
     <div id="surveyResult"></div>
     <!-- jquery file from public/javascripts to run the survey-->
     <script type="text/javascript" src="/javascripts/productClothing.js"></script>
+    <div>
+      <button id="completeButton" onclick="location.href = 'http://localhost:8080/delivery'" class ="btn-success">Complete</button>
+      <div>
+        <footer>
+          <% include ./footer %>
+        </footer>
   </body>
   </html>
