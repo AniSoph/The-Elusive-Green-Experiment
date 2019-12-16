@@ -9,18 +9,22 @@
 </head>
 <body style="margin: auto;">
   <header><% include ./header %></header>
-  <div class="container-fluid">
+  <div class="container-fluid" style="height:200px; width:700px;">
     <h1>Finally, we have a few questions about you</h1>
     <br>
     <br>
     <br>
-    <p class = "text-muted">
+    <p class ="text-muted">
       Please press the "DONE" button to submit your information and to finish the fictious online purchase process.
     </p>
     <br>
+    <button id="completeButton"  onclick="location.href ='http://localhost:8080/thankyou'" class ="btn-success">Complete</button>
   </div>
-  <div>
-    <button id = "doneButton"  onclick="location.href ='http://localhost:8080/thankyou'" class ="btn-success"></button>
-  </div>
+  <br>
+  <br>
+  <br>
+  <footer>
+    <% include ./footer %>
+  </footer>
 </body>
 </html>
