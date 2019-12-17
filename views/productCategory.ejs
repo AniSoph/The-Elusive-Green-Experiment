@@ -9,16 +9,21 @@
     <style>
     /* Container needed to position the button. Adjust the width as needed */
     .container {
+      padding: 20px 10px 0px 10px;
       position: relative;
-      width: 25%;
     }
+    .row{
+      display: flex;
+    }
+
     /* Make the image responsive */
     .container img {
       width: 100%;
-      height: auto;
+      height: 100%;
+      position: relative;
     }
     /* Style the button and place it in the middle of the container/image */
-    .container .chooseButton {
+    .container .choose-button {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -34,33 +39,36 @@
       opacity: 0.6;
       transition: 0.3s;
     }
-    .container .chooseButton:hover {
+    .container .choose-button:hover {
       background-color: #ff9b00;
       opacity: 1;
     }
+
     </style>
   </head>
   <body style="margin: auto;">
     <header><% include ./header %></header>
+    <div class="row">
     <div class="container">
-      <img class="img" id="Electronics" src="https://www.howtogeek.com/wp-content/uploads/2019/08/img_5d603e1a30d8f.jpg" alt="Electronics">
-      <button class="chooseButton" onclick="location.href ='http://localhost:8080/electronics'">Electronics</button>
+      <img class="img" id="Electronics" src="https://bornrealist.com/wp-content/uploads/2017/09/electronic-gadgets.jpg" alt="Electronics">
+      <button class="choose-button" onclick="location.href ='http://localhost:8080/electronics'">Electronics</button>
     </div>
     <br>
     <div class="container">
-      <img class="img" id="Clothing" src="https://www.cccreationsusa.com/wp-content/uploads/2017/12/clothes-hanging-862x493.jpg" alt="Clothing">
-      <button class="chooseButton" onclick="location.href ='http://localhost:8080/clothing'">Clothing</button>
+      <img class="img" id="Clothing" src="https://www.bigissuenorth.com/wp-content/uploads/2019/05/lyc-campaigns-1600_0_bigissuenorth.jpg" alt="Clothing">
+      <button class="choose-button" onclick="location.href ='http://localhost:8080/clothing'">Clothing</button>
     </div>
     <br>
     <div class="container">
-      <img class="img" id="Home" src="https://lithub.com/wp-content/uploads/2019/07/used-books-store-2.jpg" alt="Home">
-      <button class="chooseButton" onclick="location.href ='http://localhost:8080/home'">Home</button>
+      <img class="img" id="Home" src="https://www.wmf.com/media/flexslider/impulse-buehne.jpg" alt="Home">
+      <button class="choose-button" onclick="location.href ='http://localhost:8080/home'">Home Supplies</button>
     </div>
     <br>
     <div class="container">
-      <img class="img" id="Cosmetics" src="https://industrywired.com/wp-content/uploads/2018/12/Cosmetics.jpg" alt="Cosmetics">
-      <button class="chooseButton" onclick="location.href ='http://localhost:8080/cosmetics'">Cosmetics</button>
+      <img class="img" id="Cosmetics" src="https://cf.ltkcdn.net/fashion-history/images/std/210826-666x450-Set-of-cosmetics.jpg" alt="Cosmetics">
+      <button class="choose-button" onclick="location.href ='http://localhost:8080/cosmetics'">Cosmetics</button>
     </div>
+  </div>
     <br>
     <footer>
       <% include ./footer %>
