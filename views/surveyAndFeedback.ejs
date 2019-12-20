@@ -10,17 +10,49 @@
 <body style="margin: auto;">
   <header><% include ./header %></header>
   <div class="container-fluid" style="height:200px; width:700px;">
-    <h1>Finally, we have a few questions about you</h1>
+    <h1>Finally, we have a few questions about you. They also allow us to contact you about the lottery</h1>
     <br>
     <br>
-    <br>
-    <p class ="text-muted">
-      Please press the "DONE" button to submit your information and to finish the fictious online purchase process.
-    </p>
-    <br>
-    <button id="completeButton"  onclick="location.href ='http://localhost:8080/thankyou'" class ="btn-success">Complete</button>
-  </div>
-  <br>
+
+
+
+    <div class="container">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <br>
+        <br>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <br>
+        <br>
+        <label for="email">E-mail address</label>
+        <input type="text" id="mail" name="email_address" placeholder="Your email-address..">
+        <br>
+        <br>
+        <label for="country">Country</label>
+        <input type="text" id="country" name="country" placeholder="Your country..">
+        <br>
+        <br>
+        <label for="region">Region</label>
+        <select id="region" name="country">
+          <option value="urban">Urban</option>
+          <option value="rural">Rural</option>
+          <option value="suburban">Suburban</option>
+        </select>
+        <br>
+        <br>
+        <label for="final">Is there anything else that you would like to share with us?</label>
+        <textarea id="final" name="final" placeholder="Write something.." style="height:200px">
+        </textarea>
+        <br>
+        <p class ="text-muted">
+          Please press the "Submit" button to submit your information and to finish the fictious online purchase process.
+        </p>
+        <br>
+        <button id="completeButton"  onclick="location.href ='http://localhost:8080/thankyou'" class ="btn-success">Complete</button>
+      </div>
+    </form>
   <br>
   <br>
   <footer>
