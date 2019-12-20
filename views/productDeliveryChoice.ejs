@@ -6,11 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/stylesheets/style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+
+    .container {
+      padding: 20px 10px 0px 10px;
+      position: relative;
+    }
+
+    .container img {
+      width: 20%;
+      height: 20%;
+      position: relative;
+    }
+
+    </style>
   </head>
-  <body style="margin: auto;">
+  <body id ="test" style="margin: auto;">
     <header><% include ./header %></header>
     <div style="padding:100px 100px;">
-    <button id="completeButton" onclick="location.href='http://localhost:8080/surveyandfeedback'" class="btn-success">Complete</button>
+
+  <button id = '1day' onclick="location.href = 'http://localhost:8080/surveyandfeedback'" class ="btn-success">1-day delivery</button>
+  <p>
+    Your product will arrive withing 24 hours.
+    </p>
+
+  <button id = '7days' onclick="location.href = 'http://localhost:8080/surveyandfeedback'" class ="btn-success">7-day delivery</button>
+  <p>
+    Your product will arrive withing 24 hours.
+    </p>
+
+  <div class="container">
+    <img class="img" id="OtherpplChoice" src="">
+  </div>
+    <script>
+            $.ajax({
+              url: 'http://localhost:8080/id'
+            }).done(function(receiveUserId){
+              console.log(receiveUserId);
+              var id = receiveUserId.id
+              //modulo
+              if (id%3 == 2) {
+                document.getElementById("OtherpplChoice").src = "https://www.sachaheck.net/blog/wp-content/uploads/2010/03/Grafik_Kuchenstueck.jpg"
+              } else if (id%3 == 0) {
+                document.getElementById("OtherpplChoice").src = "https://s.hdnux.com/photos/70/33/74/14794533/9/rawImage.jpg"
+              }
+            });
+
+          </script>
+
+
+
   </div>
     <footer>
       <% include ./footer %>
