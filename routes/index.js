@@ -3,6 +3,10 @@
 This enable us to export the routing logic as a module and use it in the main app.js.*/
 var express = require('express');
 var router = express.Router();
+
+// Server creates initialise local UserId
+var id = 1;
+
 /*const MongoClient = require('mongodb').MongoClient;
 
 
@@ -23,6 +27,23 @@ MongoClient.connect(url, function(err, db) {
 The second argument is a callback function that tells the server what to do when the path is matched.
 It takes two arguments, a request object and a response object.
 Here we use render method that comes with responde object.*/
+
+
+// create new User Id for the following participants
+function generateID () {
+  id= id+1;
+  return id;
+}
+
+router.get("/id", function(req,res,next) {
+  
+  var HoldId = generateID()
+   var ObjectId = { id : HoldId }
+   res.send (ObjectId)
+   
+});
+
+
 
 /*Instructions - GET home page.*/
 router.get('/', function(req, res, next ) {
