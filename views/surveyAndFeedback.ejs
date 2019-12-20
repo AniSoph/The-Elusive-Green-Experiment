@@ -43,20 +43,25 @@
         <br>
         <br>
         <label for="final">Is there anything else that you would like to share with us?</label>
+        <br>
         <textarea id="final" name="final" placeholder="Write something.." style="height:200px">
         </textarea>
-        <br>
         <p class ="text-muted">
-          Please press the "Submit" button to submit your information and to finish the fictious online purchase process.
+        <br>
+        Please press the "Complete" button to submit your information and to finish the fictious online purchase process.
         </p>
         <br>
-        <button id="completeButton"  onclick="location.href ='http://localhost:8080/thankyou'" class ="btn-success">Complete</button>
+        <input type="submit" value="Submit">
       </div>
     </form>
   <br>
-  <br>
-  <footer>
-    <% include ./footer %>
-  </footer>
+  <button id="completeButton"  onclick="location.href ='http://localhost:8080/thankyou'" class ="btn-success">Complete</button>
+</div>
+<br>
+<br>
+<br>
+<footer>
+  <% include ./footer %>
+</footer>
 </body>
 </html>
