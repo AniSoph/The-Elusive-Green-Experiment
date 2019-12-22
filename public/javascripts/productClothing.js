@@ -41,18 +41,16 @@ var json = {
 
 window.survey = new Survey.Model(json);
 
-/* When completed - save into json*/
+/* When completed - redirect to the delivery page*/
 survey
     .onComplete
     .add(function (result) {
-        document
-            .querySelector('#surveyResult')
-            .textContent = "Result JSON:\n" + JSON.stringify(result.data, null, 3);
+      window.location.href = "http://localhost:8080/delivery"
     });
 
 /*Functions included in the survey widget*/
-survey.showQuestionNumbers = 'false';
-survey.completedHtml = 'http://localhost:8080/surveyandfeedback';
+survey.showQuestionNumbers = "false";
+
 
 
 /* survey style customization
