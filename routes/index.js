@@ -4,48 +4,25 @@ This enable us to export the routing logic as a module and use it in the main ap
 var express = require('express');
 var router = express.Router();
 
-// Server creates initialise local UserId
+/*Server creates initialise local UserId*/
 var id = 1;
 
-/*const MongoClient = require('mongodb').MongoClient;
-
-
-// connect to the db and start the express server
-let db;
-
-// ***Replace the URL below with the URL for your database***
-const url = 'mongodb+srv://akurdydy:Solnushko96%3F@database-h1iao.mongodb.net/test?retryWrites=true&w=majority';
-
-MongoClient.connect(url, function(err, db) {
-  useUnifiedTopology: true
-  if (err) throw err;
-  console.log("Database created!");
-  db.close();
-});
-*/
-/* '/' - it is the path of the GET request. It’s anything that comes after your domain name.
-The second argument is a callback function that tells the server what to do when the path is matched.
-It takes two arguments, a request object and a response object.
-Here we use render method that comes with responde object.*/
-
-
-// create new User Id for the following participants
+/*Create new User Id for the following participants*/
 function generateID () {
   id= id+1;
   return id;
 }
-
-
-// get local UserId from Server and send the ID to the Client
+/*Get local UserId from Server and send the ID to the Client*/
 router.get("/id", function(req,res,next) {
-    // Create variable with the specific Id
+/*Create variable with the specific ID*/
   var HoldId = generateID()
-  // Create Object with all IDs
-  // id (key) : "HoldId" (value)
+/*Create Object with all IDs
+id (key) : "HoldId" (value)*/
    var ObjectId = { id : HoldId }
    res.send (ObjectId)
-   // server responds and sends ID to the Client
+/*Server responds and sends ID to the Client*/
 });
+
 
 
 /*Instructions - GET home page.*/
