@@ -4,7 +4,7 @@ var surveyJSON = {"title":"Internal and External Motivation","description":"We a
 
 
 function sendDataToServer(survey) {
-    //predefined function to send Ajax request to web server
+    //send Ajax request to web server
 
     window.location.href="http://localhost:8080/selectcategory";
 }
