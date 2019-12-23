@@ -14,7 +14,12 @@ body {
   line-height: 1.8;
   margin: 1px; }
 
+h1 {
+  font-family: "Indie Flower";
+  font-size: xxx-large; }
+
 .btn-complete1 {
+  font-family: "Open Sans";
   position: relative;
   height: 50px;
   width: 50%;
