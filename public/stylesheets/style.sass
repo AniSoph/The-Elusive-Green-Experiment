@@ -1,6 +1,7 @@
 /*Define color palette*/
 $bgcolor: transparent
 $color_main: #004475
+$color_btn: #004475
 //$color_2:
 //$color_3:
 
@@ -12,5 +13,31 @@ body
   background-color: $bgcolor
   padding: 50px
   font-family: $font_main
+  font-size: large
   color: $color_main
   text-align: center
+
+/*Index page customization*/
+.container-fluid
+  position: sticky
+  line-height: 1.8
+  margin: 1px
+
+.text-muted
+  //padding-bottom: 50px
+
+.btn-complete1
+    position: relative
+    height: 50px
+    width: 50%
+    background: #e2e6e9
+    margin: 20px
+    border: 0px
+    color: $color_btn
+    box-shadow: 0 0 1px #ccc
+    -webkit-transition-duration: 0.3s
+    -webkit-transition-timing-function: linear
+    box-shadow: 0px 0 0 $color_btn inset
+
+.btn-complete1:hover
+    box-shadow: 100px 0  0 100px $color_btn inset
