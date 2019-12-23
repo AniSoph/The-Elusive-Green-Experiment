@@ -1,8 +1,5 @@
 
 var surveyJSON = {
- "title": "Internal and External Motivation",
- "description": "We are interested in the reasons people may or may not be motivated to engage in proenvironmental behavior – that is, behavior intended to protect the environment and be good for the planet. People may have personal reasons they are motivated, social reasons for their motivation, multiple reasons, or not be concerned about these issues. There are no right or wrong answers to the following questions so please be as open and honest as possible in your answers. Please indicate the degree to which you agree or disagree with the following statements using the scale below. There are no right or wrong answers to the following questions so please be as open and honest as possible in your answers. ",
- "completedHtml": "<br>\n</br>",
  "loadingHtml": "http://localhost:8080/selectcategory",
  "pages": [
   {
