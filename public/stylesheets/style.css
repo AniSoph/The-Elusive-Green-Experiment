@@ -1,10 +1,10 @@
+/*Define color palette*/
+/*Define color palette*/
 body {
   background-color: transparent;
   padding: 50px;
-  font: normal 16px/1em Proxima,Helvetica Neue,Helvetica,Arial,sans-serif;
-  color: #004475; }
-
-a {
-  color: #3cadac; }
+  font-family: "Open Sans";
+  color: #004475;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
