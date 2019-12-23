@@ -1,51 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>INSTRUCTIONS</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="/stylesheets/style.css"/>
-    <!--download of Jquery library - ajax-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <style>
-    .container-fluid{
-      position: static;
-      padding-bottom: 50px;
-      padding-right: 100px;
-      line-height: 1.8;
-    }
-    .text-muted{
-      padding-left: 15px;
-      padding-bottom: 50px;
-    }
-    .button-complete{
-      padding-left: 15px;
-    }
-    </style>
-  </head>
-  <body style="margin: auto;">
-    <div class="container-fluid">
-      <h1>Welcome!</h1>
+<head>
+  <title>INSTRUCTIONS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="/stylesheets/style.css"/>
+  <!--download of Jquery library - ajax-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body style="margin: auto;">
+  <div class="container-fluid">
+    <h1>Welcome!</h1>
+    <br>
+    <p>
+      Today you will become a customer in the online store - Shop with Us.
       <br>
+      During the next 10-15 minutes, you will be asked to provide some
+      information about yourself and make your <i>fictious</i> purchase.
+      You will be given a choice of four categories of goods with six objects in each category.
+      In the next step you will be asked to choose a prefered method of delivery.
       <br>
-        <p>
-          Today you will be participating in a fictious online purchase scenario.
-          You will become a customer in an online store, where you suppose to choose your product and method of its delivery.
-          You will be given a choice of 4 categories of goods with 6 objects in each category. In the next step you will be asked to choose a prefered method of delivery. Easy, isn't it?
-          <br>
-          At the end of your fictious purchase you will have the chance to win a voucher that allows you to shop in a local store or online. Overall, the ... takes about 3-4 minutes.
-          </p>
-        </div>
-          <br>
-         <br>
-         <div class = "text-muted">
-         <p>If you understood the instructions correctly, press the "COMPLETE" button to proceed.</p>
-      </div>
-        <br>
-        <div class="button-complete">
-        <button id="completeButton"  onclick="location.href ='http://localhost:8080/survey'" class ="btn-success">Complete</button>
-      </div>
-      <footer><% include ./footer%></footer>
-  </body>
-  </html>
+      After completing all the steps you will have the chance to win
+      a <i>real</i> voucher that allows you to shop in a local store or online.
+    </p>
+  </div>
+  <br>
+  <div class = "text-muted">
+    <p>If you understood the instructions,
+      press the Complete button below to proceed.
+    </p>
+    <br>
+    <button onclick="location.href ='http://localhost:8080/survey'" class="btn-complete1">Complete</button>
+  </div>
+  <br>
+  <footer><% include ./footer%></footer>
+</body>
+</html>
