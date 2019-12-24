@@ -4,6 +4,8 @@ This enable us to export the routing logic as a module and use it in the main ap
 var express = require('express');
 var router = express.Router();
 
+/*TREATMENT RANDOMIZATION*/
+
 /*Server creates initialise local UserId*/
 var id = 1;
 
@@ -22,6 +24,9 @@ id (key) : "HoldId" (value)*/
    res.send (ObjectId)
 /*Server responds and sends ID to the Client*/
 });
+
+
+/*PAGE RENDERING*/
 
 /*Instructions - GET home page.*/
 router.get('/', function(req, res, next ) {
