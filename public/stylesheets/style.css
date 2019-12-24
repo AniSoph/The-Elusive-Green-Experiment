@@ -35,4 +35,53 @@ h1 {
 .btn-complete1:hover {
   box-shadow: 100px 0 0 100px #004475 inset; }
 
+/*Product Choice Clothing,Cosmetics,Electronics, and Home customization*/
+.column_prod {
+  float: left;
+  width: 20%;
+  margin-bottom: 16px;
+  padding: 0 8px; }
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%; } }
+
+.card_prod {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+
+.container_prod {
+  padding: 0 16px;
+  position: relative; }
+  .container_prod::after {
+    content: "";
+    clear: both;
+    display: table; }
+
+.row_prod::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.title_prod {
+  color: grey; }
+
+.img {
+  width: 200px;
+  height: 200px;
+  position: relative; }
+
+.button_prod {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #528B8B;
+  text-align: center;
+  cursor: pointer;
+  width: 12%; }
+  .button_prod:hover {
+    background-color: #555;
+    opacity: 1; }
+
 /*# sourceMappingURL=style.css.map */
