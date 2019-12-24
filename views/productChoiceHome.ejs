@@ -6,76 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/stylesheets/style.css"/>
-
-
-      <style>
-        /* Three columns side by side */
-       .column {
-         float: left;
-         width: 20%;
-         margin-bottom: 16px;
-         padding: 0 8px;
-       }
-
-       /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-       @media screen and (max-width: 600px) {
-         .column {
-           width: 100%;
-         }
-       }
-
-       /* Add some shadows to create a card effect */
-       .card {
-         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-       }
-
-       /* Some left and right padding inside the container */
-       .container {
-         padding: 0 16px;
-         position: relative;
-       }
-
-       /* Clear floats */
-       .container::after, .row::after {
-         content: "";
-         clear: both;
-         display: table;
-       }
-
-       .title {
-         color: grey;
-       }
-
-       /* Make the image responsive */
-       .container img {
-      width: 200px;
-      height: 200px%;
-      position: relative;
-      }
-
-       .container .button {
-         border: none;
-         outline: 0;
-         display: inline-block;
-         padding: 8px;
-         color: white;
-         background-color: #528B8B;
-         text-align: center;
-         cursor: pointer;
-         width: 12%;
-       }
-
-       .container .button:hover {
-         background-color: #555;
-         opacity: 1;
-       }
-     </style>
-
-      </head>
-      <body style="margin: auto;">
-        <header><% include ./header %></header>
-
-        <br>
+  </head>
+  <body style="margin: auto;">
+    <header><% include ./header %></header>
+    <br>
         <h2>Choose your procuct</h2>
         <br>
         <p>
@@ -88,13 +22,13 @@
           <br>
           <br>
 
-   <! Add 6 images in cards that contain a text and an additional button each >
-   <div class="row">
-     <div class="column">
-       <div class="card">
-         <div class="container">
+  <!-- Add 6 images in cards that contain a text and an additional button each-->
+   <div class="row_prod">
+     <div class="column_prod">
+       <div class="card_prod">
+         <div class="container_prod">
            <img class="img" id="Basket-table" src="images/Basket.jpg" alt="Basket-table">
-       <div class="container">
+           <div class="container_prod">
          <h2>Basket-table</h2>
          <p class="title">Home Prod. Inc.</p>
          <p>25,99€</p>
@@ -105,11 +39,11 @@
   </div>
 
 
-   <div class="column">
-     <div class="card">
-       <div class="container">
+  <div class="column_prod">
+    <div class="card_prod">
+      <div class="container_prod">
          <img class="img" id="Basket-table_eco" src="images/Basket_eco.jpg" alt="Basket-table_eco">
-       <div class="container">
+         <div class="container_prod">
          <h2>Basket-table</h2>
          <p class="title">Environmental Prod. Inc.</p>
          <p>25,99€</p>
@@ -120,11 +54,11 @@
  </div>
 
 
-   <div class="column">
-     <div class="card">
-       <div class="container">
+ <div class="column_prod">
+   <div class="card_prod">
+     <div class="container_prod">
          <img class="img" id="Cutlery" src="images/Cutlery.jpg" alt="Cutlery">
-       <div class="container">
+         <div class="container_prod">
          <h2>Cutlery</h2>
          <p class="title">Sunglasses Prod. Inc.</p>
          <p>42,99€</p>
@@ -136,12 +70,12 @@
 </div>
 
 
-   <div class="row">
-   <div class="column">
-     <div class="card">
-       <div class="container">
+   <div class="row_prod">
+     <div class="column_prod">
+       <div class="card_prod">
+         <div class="container_prod">
          <img class="img" id="Cutlery_eco" src="images/Cutlery_eco.jpg" alt="Cutlery_eco">
-       <div class="container">
+         <div class="container_prod">
          <h2>Cutlery</h2>
          <p class="title">Environmental Prod. Inc.</p>
          <p>42,99€</p>
@@ -152,11 +86,11 @@
  </div>
 
 
-   <div class="column">
-     <div class="card">
-       <div class="container">
+ <div class="column_prod">
+   <div class="card_prod">
+     <div class="container_prod">
          <img class="img" id="Waterbottle" src="images/Bottle.jpg" alt="Waterbottle">
-       <div class="container">
+         <div class="container_prod">
          <h2>Waterbottle</h2>
          <p class="title">Tshirt Prod. Inc.</p>
          <p>9,99€</p>
@@ -166,11 +100,11 @@
    </div>
  </div>
 
-   <div class="column">
-     <div class="card">
-       <div class="container">
+ <div class="column_prod">
+   <div class="card_prod">
+     <div class="container_prod">
          <img class="img" id="Waterbottle_eco" src="images/Bottle_eco.jpg" alt="Waterbottle_eco">
-       <div class="container">
+         <div class="container_prod">
          <h2>Waterbottle</h2>
          <p class="title">Environmental Prod. Inc.</p>
          <p>9,99€</p>
