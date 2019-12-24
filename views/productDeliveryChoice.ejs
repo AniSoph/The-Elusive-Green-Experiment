@@ -7,71 +7,46 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/stylesheets/style.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <style>
-
-    .container {
-      padding: 20px 10px 0px 10px;
-      position: relative;
-    }
-
-    .container img {
-      width: 20%;
-      height: 20%;
-      position: relative;
-    }
-
-    </style>
   </head>
   <body id ="test" style="margin: auto;">
     <header><% include ./header %></header>
     <div style="padding:100px 100px;">
-
-
-
-  <h1> Please chose a delivery option </h1>
-  <br>
-  <br>
-  <br>
-  <br>
-
-
-  <button id = '1day' onclick="location.href = 'http://localhost:8080/surveyandfeedback'" class ="btn-success">1-day delivery</button>
-  <p>
-    Your product will arrive withing 24 hours.
-    </p>
-
-  <button id = '7days' onclick="location.href = 'http://localhost:8080/surveyandfeedback'" class ="btn-success">7-day delivery</button>
-  <p>
-    Your product will arrive withing 7 days.
-    </p>
-
-  <div class="container">
-    <img class="img" id="OtherpplChoice" src="">
-  </div>
-    <script>
-            $.ajax({
-              url: 'http://localhost:8080/id'
-            }).done(function (receiveUserId){
-
-              console.log(receiveUserId);
-              var id = receiveUserId.id
-
-              //modulo
-              if (id%3 == 2) {
-                document.getElementById("OtherpplChoice").src = "https://www.sachaheck.net/blog/wp-content/uploads/2010/03/Grafik_Kuchenstueck.jpg"
-              } else if (id%3 == 0) {
-                document.getElementById("OtherpplChoice").src = "https://i.imgur.com/YKEDNMu.png"
-              }
-            });
-
-          </script>
+      <h2>Please chose a delivery option</h2>
+      <br>
+      <button id = '1day' onclick="location.href = 'http://localhost:8080/surveyandfeedback'" class ="btn-success">1-day delivery</button>
+      <p>
+        Your product will arrive withing 24 hours.
+      </p>
+      <button id = '7days' onclick="location.href = 'http://localhost:8080/surveyandfeedback'" class ="btn-success">7-day delivery</button>
+      <p>
+        Your product will arrive withing 7 days.
+      </p>
+      <div class="container-del">
+        <img class="img" id="OtherpplChoice" src="">
+      </div>
+      <!--Randomization part-->
+      <script>
+      $.ajax({
+        url: 'http://localhost:8080/id'
+      }).done(function (receiveUserId){
+        console.log(receiveUserId);
+        var id = receiveUserId.id
+        //modulo
+        if (id%3 == 2) {
+          document.getElementById("OtherpplChoice").src = "https://www.sachaheck.net/blog/wp-content/uploads/2010/03/Grafik_Kuchenstueck.jpg"
+        } else if (id%3 == 0) {
+          document.getElementById("OtherpplChoice").src = "https://i.imgur.com/YKEDNMu.png"
+        }
+      });
+    </script>
   </div>
   <br>
   <div class="progress">
     <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
   </div>
+  <br>
   <footer>
     <% include ./footer %>
   </footer>
-  </body>
-  </html>
+</body>
+</html>
