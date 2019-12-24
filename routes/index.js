@@ -23,8 +23,6 @@ id (key) : "HoldId" (value)*/
 /*Server responds and sends ID to the Client*/
 });
 
-
-
 /*Instructions - GET home page.*/
 router.get('/', function(req, res, next ) {
   res.render('index');
