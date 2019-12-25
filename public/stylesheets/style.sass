@@ -10,6 +10,7 @@ $font_header: 'Indie Flower'
 $font_main: 'Open Sans'
 //$font_extrainfo:
 
+
 body
   background-color: $bgcolor
   padding: 50px
@@ -18,8 +19,14 @@ body
   color: $color_main
   text-align: center
 
+h2
+  font-family: $font_main
+  font-size: x-large
 
-/*Index page customization*/
+.progress
+  display: inherit
+
+/*INDEX/INSTRUCTION*/
 
 .container-fluid
   position: sticky
@@ -57,7 +64,7 @@ a
 .btn-complete1:hover
     box-shadow: 100px 0  0 100px $color_btn inset
 
-/*Category choice customization*/
+/*PRODUCT CATEGORY CHOICE*/
 
 .container-cat
   padding: 10px 10px 10px 10px
@@ -96,7 +103,8 @@ a
     opacity: 1
 
 
-/*Product Choice Clothing,Cosmetics,Electronics, and Home customization*/
+/*PRODUCT CHOICE*/
+
 .column-prod
   float: left
   width: 20%
@@ -137,11 +145,8 @@ a
     height: 200px
     position: relative
 
-/* Delivery page customization*/
+/*DELIVERY CHOICE*/
 
-h2
-  font-family: $font_main
-  
 .container-del
   padding: 20px 10px 0px 10px
   position: relative
@@ -149,4 +154,10 @@ h2
 .container-del img
   width: 20%
   height: 20%
+  position: relative
+
+/*FEEDBACK*/
+
+.container-feedback
+  display: inherit
   position: relative

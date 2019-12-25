@@ -8,7 +8,14 @@ body {
   color: #004475;
   text-align: center; }
 
-/*Index page customization*/
+h2 {
+  font-family: "Open Sans";
+  font-size: x-large; }
+
+.progress {
+  display: inherit; }
+
+/*INDEX/INSTRUCTION*/
 .container-fluid {
   position: sticky;
   line-height: 1.8;
@@ -45,7 +52,7 @@ a {
 .btn-complete1:hover {
   box-shadow: 100px 0 0 100px #004475 inset; }
 
-/*Category choice customization*/
+/*PRODUCT CATEGORY CHOICE*/
 .container-cat {
   padding: 10px 10px 10px 10px;
   position: relative; }
@@ -80,7 +87,7 @@ a {
   background-color: #ffb910;
   opacity: 1; }
 
-/*Product Choice Clothing,Cosmetics,Electronics, and Home customization*/
+/*PRODUCT CHOICE*/
 .column-prod {
   float: left;
   width: 20%;
@@ -115,10 +122,7 @@ a {
   height: 200px;
   position: relative; }
 
-/* Delivery page customization*/
-h2 {
-  font-family: "Open Sans"; }
-
+/*DELIVERY CHOICE*/
 .container-del {
   padding: 20px 10px 0px 10px;
   position: relative; }
@@ -126,6 +130,11 @@ h2 {
 .container-del img {
   width: 20%;
   height: 20%;
+  position: relative; }
+
+/*FEEDBACK*/
+.container-feedback {
+  display: inherit;
   position: relative; }
 
 /*# sourceMappingURL=style.css.map */
