@@ -73,6 +73,17 @@ router.get('/delivery',function(req, res, next ) {
   res.render('productDeliveryChoice');
 });
 
+/* Delivery Choice - TREATMENT 1 - GET REQUEST
+router.get('/delivery/delivery_354567',function(req, res, next ) {
+  res.render('productDeliveryTreatment1');
+});
+
+/* Delivery Choice - TREATMENT 2 - GET REQUEST
+router.get('/delivery/delivery_354767',function(req, res, next ) {
+  res.render('productDeliveryTreatment2');
+});*/
+
+
 /*Final Feedback Survey page - GET REQUEST.*/
 router.get('/surveyandfeedback',function(req, res, next ) {
   res.render('surveyAndFeedback');
