@@ -1,17 +1,17 @@
 
 var surveyJSON = {
- "loadingHtml": "http://localhost:8080/selectcategory",
+
  "pages": [
   {
    "name": "page1",
    "elements": [
     {
      "type": "matrix",
-     "name": "Please indicate the degree to which you agree or disagree with the following statements using the scale below",
+     "name": "We .... Please indicate the degree to which you agree or disagree with the following statements using the scale below",
      "columns": [
       {
        "value": "1",
-       "text": "strongly disagree "
+       "text": "Strongly Disagree "
       },
       "2",
       "3",
@@ -20,56 +20,90 @@ var surveyJSON = {
       "6",
       {
        "value": "7",
-       "text": "strongly agree"
+       "text": "Strongly Agree"
+      }
+     ],
+     "rows": [
+      {
+       "value": "3",
+       "text": "If I didn’t engage in proenvironmental behaviors, I would worry that others would think of me as a bad person"
+      },
+      {
+       "value": "1",
+       "text": "I am personally motivated by my concern for the environment to engage in proenvironmental behavior"
+      },
+      {
+       "value": "2",
+       "text": "I try to make decisions that are good for the environment because concern for the environment is central to my core values"
+      },
+      {
+       "value": "4",
+       "text": "It is important to me that other people are aware of the efforts I make to help protect the environment"
+      },
+      {
+       "value": "5",
+       "text": "I try to make proenvironmental decisions to avoid social disapproval"
+      }
+     ],
+     "rowsOrder": "random",
+     "isAllRowRequired": true
+    }
+   ],
+   "questionTitleLocation": "top",
+   "questionsOrder": "random"
+  },
+  {
+   "name": "page2",
+   "elements": [
+    {
+     "type": "matrix",
+     "name": "Please indicate the degree to which you agree or disagree with the following statements using the scale below",
+     "columns": [
+      {
+       "value": "1",
+       "text": "Strongly Disagree "
+      },
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      {
+       "value": "7",
+       "text": "Strongly Agree"
       }
      ],
      "rows": [
       {
        "value": "1",
-       "text": "I avoid behaviors that would hurt the environment due to my personally important beliefs"
+       "text": "I avoid behaviors that would hurt the environment due to my personally important beliefs "
       },
       {
        "value": "2",
-       "text": "I try to behave in proenvironmental ways because it is personally important to me"
+       "text": "I try to behave in proenvironmental ways because it is personally important to me "
       },
       {
        "value": "3",
-       "text": "I am personally motivated by my concern for the environment to engage in proenvironmental behavior"
+       "text": "If I engage in behaviors that may be harmful to the environment, I feel like others judge me negatively"
       },
       {
        "value": "4",
-       "text": "I try to make decisions that are good for the environment because concern for the environment is central to my core values"
-      },
-      {
-       "value": "Row 5",
-       "text": "If I engage in behaviors that may be harmful to the environment, I feel like others judge me negatively "
-      },
-      {
-       "value": "Row 6",
-       "text": "I am motivated to engage in behaviors that help protect the environment so that other people think I am a good person "
-      },
-      {
-       "value": "Row 7",
-       "text": "If I didn’t engage in proenvironmental behaviors, I would worry that others would think of me as a bad person"
-      },
-      {
-       "value": "Row 8",
-       "text": "It is important to me that other people are aware of the efforts I make to help protect the environment"
-      },
-      {
-       "value": "Row 9",
-       "text": "I try to make proenvironmental decisions to avoid social disapproval"
+       "text": "I am motivated to engage in behaviors that help protect the environment so that other people think I am a good person"
       }
      ],
      "isAllRowRequired": true
     }
-   ]
+   ],
+   "questionTitleLocation": "top",
+   "questionsOrder": "random"
   }
  ],
- "showPrevButton": false,
+ "showPageTitles": false,
  "showCompletedPage": false,
+ "questionsOrder": "random",
  "showQuestionNumbers": "off",
- "completeText": "Complete"
+ "pageNextText": "Complete",
+ "completeText": "Complete",
 }
 
 /* Send Ajax request to web server*/
