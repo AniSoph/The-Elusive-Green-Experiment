@@ -1,7 +1,6 @@
 
 var surveyJSON = {
  "completedHtml": "<br>\n</br>",
- "loadingHtml": "http://localhost:8080/selectcategory",
  "pages": [
   {
    "name": "page1",
