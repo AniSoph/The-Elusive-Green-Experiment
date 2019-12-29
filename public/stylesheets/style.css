@@ -22,7 +22,7 @@ h2 {
   margin: 1px; }
 
 h1 {
-  font-family: "Indie Flower";
+  font-family: "Open Sans";
   font-size: xxx-large; }
 
 a {
@@ -136,5 +136,17 @@ a {
 .container-feedback {
   display: inherit;
   position: relative; }
+
+/*HEADER*/
+.navbar-brand {
+  color: #004475;
+  font-family: "Indie Flower";
+  font-size: 36px; }
+
+/*FOOTER*/
+.text-footer {
+  font-family: "Indie Flower";
+  font-size: 13px;
+  padding: inherit; }
 
 /*# sourceMappingURL=style.css.map */
