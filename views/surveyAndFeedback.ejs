@@ -10,16 +10,47 @@
 <body style="margin: auto;">
   <header><% include ./header %></header>
   <div class="container-info" style="height:200px; width:700px;">
-    <h2>Finally, we have a few questions about you. They also allow us to contact you about the lottery</h1>
+    <h1>Almost done!</h1>
     <br>
+    <br>
+    <p>Finally, we have a few questions about you.</p>
     <br>
     <div class="container-feedback">
       <form action="/action_page.php">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="country">Please enter your country of residence</label>
+        <input type="text" id="country" name="country" placeholder="Your country..">
         <br>
         <br>
-        <label for="lname">Last Name</label>
+        <label for="sex">What is your gender?</label>
+        <select id="sex" name="sex">
+          <option value="select">Please select</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <br>
+        <br>
+        <label for="birth">What is your year of birth?</label>
+        <input type="number" min="1900" max="2018" step="1" placeholder="xxxx" />
+        <br>
+        <br>
+        <label for="region">Do you live in an urban, rural or suburban region?</label>
+        <select id="region" name="country">
+          <option value="select">Please select</option>
+          <option value="urban">Urban</option>
+          <option value="rural">Rural</option>
+          <option value="suburban">Suburban</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <p>In order to consider you for the lottery which allow you to win a voucher, please indicate your contact details.</p>
+        <p>In case you win, we will contact you via email.</p>
+        <br>
+        <label for="fname">First name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+        <br>
+        <br>
+        <label for="lname">Last name</label>
         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
         <br>
         <br>
@@ -27,32 +58,48 @@
         <input type="text" id="mail" name="email_address" placeholder="Your email-address..">
         <br>
         <br>
-        <label for="country">Country</label>
-        <input type="text" id="country" name="country" placeholder="Your country..">
         <br>
+        <label for="final">At last, we want to ask you if there is anything that you would like to share with us?</label>
         <br>
-        <label for="region">Region</label>
-        <select id="region" name="country">
-          <option value="urban">Urban</option>
-          <option value="rural">Rural</option>
-          <option value="suburban">Suburban</option>
-        </select>
-        <br>
-        <br>
-        <label for="final">Is there anything else that you would like to share with us?</label>
-        <br>
-        <textarea id="final" name="final" placeholder="Write something.." style="height:200px">
+        <textarea id="final" name="final" placeholder="Write something.." style="height:200px; width:500px;">
         </textarea>
       </form>
-        <p class ="text-muted">
+        <p class ="text-muted"></p>
         <br>
-        Please press Complete button to submit your information and to finish the fictious online purchase process.
+        <p>Please press the "Complete" button to submit your information and to finish the fictious online purchase process.
         </p>
       </div>
     <br>
     <button onclick="location.href ='http://localhost:8080/thankyou'" class="btn-complete1">Complete</button>
   </div>
   <!--will be changed later-->
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
   <br>
   <br>
   <br>
