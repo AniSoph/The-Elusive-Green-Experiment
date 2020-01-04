@@ -2,52 +2,49 @@
 <html lang = "en-US">
 <head>
   <title>SELECT CATEGORY</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="/stylesheets/style.css"/>
-  </head>
-  <body style="margin: auto;">
-    <header><% include ./header %></header>
-    <div class="row-cat">
-      <div class="card-prod">
-        <div class="container-cat">
-          <img class="img" id="Electronics" src="https://bornrealist.com/wp-content/uploads/2017/09/electronic-gadgets.jpg" alt="Electronics">
-          <button class="choose-button" onclick="location.href ='http://localhost:8080/electronics'">Electronics</button>
-        </div>
-      </div>
-      <br>
-      <div class="card-prod">
-        <div class="container-cat">
-          <img class="img" id="Clothing" src="https://www.bigissuenorth.com/wp-content/uploads/2019/05/lyc-campaigns-1600_0_bigissuenorth.jpg" alt="Clothing">
-          <button class="choose-button" onclick="location.href ='http://localhost:8080/clothing'">Clothing</button>
-        </div>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="/stylesheets/style.css"/>
+</head>
+<body style="margin: auto;">
+  <header><% include ./header %></header>
+  <div class="row-cat">
+    <div class="card-prod">
+      <div class="container-cat">
+        <img class="img" id="Electronics" src="https://bornrealist.com/wp-content/uploads/2017/09/electronic-gadgets.jpg" alt="Electronics">
+        <button class="choose-button" onclick="location.href ='http://localhost:8080/electronics'">Electronics</button>
       </div>
     </div>
     <br>
-    <div class="row-cat">
-      <div class="card-prod">
-        <div class="container-cat">
-          <img class="img" id="Home" src="https://www.wmf.com/media/flexslider/impulse-buehne.jpg" alt="Home">
-          <button class="choose-button" onclick="location.href ='http://localhost:8080/home'">Home Supplies</button>
-        </div>
+    <div class="card-prod">
+      <div class="container-cat">
+        <img class="img" id="Clothing" src="https://www.bigissuenorth.com/wp-content/uploads/2019/05/lyc-campaigns-1600_0_bigissuenorth.jpg" alt="Clothing">
+        <button class="choose-button" onclick="location.href ='http://localhost:8080/clothing'">Clothing</button>
       </div>
-      <br>
-      <div class="card-prod">
-        <div class="container-cat">
-          <img class="img" id="Cosmetics" src="https://cf.ltkcdn.net/fashion-history/images/std/210826-666x450-Set-of-cosmetics.jpg" alt="Cosmetics">
-          <button class="choose-button" onclick="location.href ='http://localhost:8080/cosmetics'">Cosmetics</button>
-        </div>
+    </div>
+  </div>
+  <br>
+  <div class="row-cat">
+    <div class="card-prod">
+      <div class="container-cat">
+        <img class="img" id="Home" src="https://www.wmf.com/media/flexslider/impulse-buehne.jpg" alt="Home">
+        <button class="choose-button" onclick="location.href ='http://localhost:8080/home'">Home Supplies</button>
       </div>
     </div>
     <br>
-    <br>
-    <!--add progress bar-->
-    <div class="progress">
-      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+    <div class="card-prod">
+      <div class="container-cat">
+        <img class="img" id="Cosmetics" src="https://cf.ltkcdn.net/fashion-history/images/std/210826-666x450-Set-of-cosmetics.jpg" alt="Cosmetics">
+        <button class="choose-button" onclick="location.href ='http://localhost:8080/cosmetics'">Cosmetics</button>
+      </div>
     </div>
-    <footer>
-      <% include ./footer %>
-    </footer>
-  </body>
-  </html>
+  </div>
+  <br>
+  <br>
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+  </div>
+  <footer><% include ./footer %></footer>
+</body>
+</html>
