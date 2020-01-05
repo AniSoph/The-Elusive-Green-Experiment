@@ -10,7 +10,8 @@
 </head>
 <body style="margin: auto;">
   <header><% include ./header %></header>
-  <div>
+  <div class="container-del">
+    <div class="container-del-info">
     <h2>Thank you for your choice!</h2>
     <p>
       Now select a preferred delivery method.
@@ -24,18 +25,19 @@
     <p>
       Your product will arrive withing 7 days.
     </p>
-    <div class="container-del">
-      <img class="img" id="Treatment" src="">
-    </div>
-    <!--Randomization part-->
-    <script>
+  </div>
+  <div class="container-del-choice">
+    <h2>Did you know?</h2>
+    <img class="img" id="Treatment" src="">
+  <!--Randomization part-->
+  <script>
     $.ajax({
       url: 'http://localhost:8080/id'
     }).done(function (receiveUserId){
       console.log(receiveUserId);
       var id = receiveUserId.id
       if (id%3 == 2) {
-        document.getElementById("Treatment").src = "images/Social_infl.png"
+        document.getElementById("Treatment").src = "images/Social_infl.jpg"
       } else if (id%3 == 0) {
         document.getElementById("Treatment").src = "https://i.imgur.com/YKEDNMu.png"
       }
@@ -53,13 +55,12 @@
 }; */
 </script>
 </div>
+</div>
 <br>
 <div class="progress">
   <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
 </div>
 <br>
-<footer>
-  <% include ./footer %>
-</footer>
+<footer><% include ./footer %></footer>
 </body>
 </html>
