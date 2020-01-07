@@ -29,7 +29,7 @@ a
   color: $color_main
 
 
-/*INDEX/INSTRUCTION*/
+/*INDEX/INSTRUCTION PAGE*/
 
 .container-fluid
   position: sticky
@@ -39,7 +39,6 @@ a
 .text-muted
   font-family: $font_main
   font-size: medium
-  padding: inherit
 
 .btn-complete
   font-family: $font_main
@@ -59,7 +58,7 @@ a
  box-shadow: 10px 0  0 100px $color_btn inset
 
 
-/*PRODUCT CATEGORY CHOICE*/
+/*PRODUCT CATEGORY CHOICE PAGE*/
 
 .row-cat
   padding-bottom: 10px
@@ -100,7 +99,7 @@ a
   opacity: 5
 
 
-/*PRODUCT CHOICE*/
+/*PRODUCT CHOICE PAGE*/
 
 .row-prod
   padding: 10px 10px 10px 200px
@@ -133,29 +132,58 @@ a
 .container-prod .btn-choose
  position: absolute
  background-color: white
- color: $color_main
+ color: $color_btn
  font-size: large
  padding: 12px 24px
  cursor: pointer
  border: 1px inset $color_btn
  border-radius: 1px
 
-/*DELIVERY CHOICE*/
+.container-prod .btn-choose:hover
+   background-color: #012d4d
+   opacity: 5
+   color: white
+
+/*DELIVERY CHOICE PAGE*/
 
 .container-del
   margin-top: 50px
   margin-left: 170px
 
-
 .container-del-info
   float: left
+
+.container-del-choice
+  padding-top: 40px
 
 .container-del-choice img
   width: 30%
   height: 30%
 
+.container-del-info .btn-choose
+ position: relative
+ background-color: white
+ color: $color_btn
+ font-size: large
+ padding: 12px 24px
+ cursor: pointer
+ border: 1px inset $color_btn
+ border-radius: 1px
 
-/*FEEDBACK*/
+.container-del-info .btn-choose:hover
+   background-color: #012d4d
+   opacity: 5
+   color: white
+
+
+/*FEEDBACK PAGE*/
+.container-info
+  float: center
+  position: relative
+
+.container-info .text-muted
+  font-family: $font_main
+  font-size: medium
 
 .container-feedback
   display: inherit
@@ -183,3 +211,7 @@ a
 
 .progress
  margin-top: 30px
+ position: relative
+
+.progress-feedback
+  margin-top: 900px

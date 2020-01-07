@@ -20,7 +20,7 @@ a {
   font-size: x-large;
   color: #004475; }
 
-/*INDEX/INSTRUCTION*/
+/*INDEX/INSTRUCTION PAGE*/
 .container-fluid {
   position: sticky;
   line-height: 1.8;
@@ -28,8 +28,7 @@ a {
 
 .text-muted {
   font-family: "Open Sans";
-  font-size: medium;
-  padding: inherit; }
+  font-size: medium; }
 
 .btn-complete {
   font-family: "Open Sans";
@@ -48,7 +47,7 @@ a {
 .btn-complete:hover {
   box-shadow: 10px 0 0 100px #004475 inset; }
 
-/*PRODUCT CATEGORY CHOICE*/
+/*PRODUCT CATEGORY CHOICE PAGE*/
 .row-cat {
   padding-bottom: 10px;
   position: inherit;
@@ -87,7 +86,7 @@ a {
   background-color: #012d4d;
   opacity: 5; }
 
-/*PRODUCT CHOICE*/
+/*PRODUCT CHOICE PAGE*/
 .row-prod {
   padding: 10px 10px 10px 200px;
   display: inline-flex; }
@@ -126,7 +125,12 @@ a {
   border: 1px inset #004475;
   border-radius: 1px; }
 
-/*DELIVERY CHOICE*/
+.container-prod .btn-choose:hover {
+  background-color: #012d4d;
+  opacity: 5;
+  color: white; }
+
+/*DELIVERY CHOICE PAGE*/
 .container-del {
   margin-top: 50px;
   margin-left: 170px; }
@@ -134,11 +138,37 @@ a {
 .container-del-info {
   float: left; }
 
+.container-del-choice {
+  padding-top: 40px; }
+
 .container-del-choice img {
   width: 30%;
   height: 30%; }
 
-/*FEEDBACK*/
+.container-del-info .btn-choose {
+  position: relative;
+  background-color: white;
+  color: #004475;
+  font-size: large;
+  padding: 12px 24px;
+  cursor: pointer;
+  border: 1px inset #004475;
+  border-radius: 1px; }
+
+.container-del-info .btn-choose:hover {
+  background-color: #012d4d;
+  opacity: 5;
+  color: white; }
+
+/*FEEDBACK PAGE*/
+.container-info {
+  float: center;
+  position: relative; }
+
+.container-info .text-muted {
+  font-family: "Open Sans";
+  font-size: medium; }
+
 .container-feedback {
   display: inherit;
   position: relative; }
@@ -158,6 +188,10 @@ a {
 
 /*PROGRESS BAR*/
 .progress {
-  margin-top: 30px; }
+  margin-top: 30px;
+  position: relative; }
+
+.progress-feedback {
+  margin-top: 900px; }
 
 /*# sourceMappingURL=style.css.map */
