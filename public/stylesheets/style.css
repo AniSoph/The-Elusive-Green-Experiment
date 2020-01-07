@@ -1,5 +1,4 @@
-/*Define color palette*/
-/*Define color palette*/
+/*Define color palette and fonts*/
 body {
   background-color: transparent;
   padding: 50px;
@@ -8,9 +7,18 @@ body {
   color: #004475;
   text-align: center; }
 
+h1 {
+  font-family: "Open Sans";
+  font-size: xxx-large; }
+
 h2 {
   font-family: "Open Sans";
   font-size: x-large; }
+
+a {
+  font-family: "Indie Flower";
+  font-size: x-large;
+  color: #004475; }
 
 /*INDEX/INSTRUCTION*/
 .container-fluid {
@@ -18,21 +26,12 @@ h2 {
   line-height: 1.8;
   margin: 1px; }
 
-h1 {
-  font-family: "Open Sans";
-  font-size: xxx-large; }
-
-a {
-  font-family: "Indie Flower";
-  font-size: x-large;
-  color: #004475; }
-
 .text-muted {
   font-family: "Open Sans";
   font-size: medium;
   padding: inherit; }
 
-.btn-complete1 {
+.btn-complete {
   font-family: "Open Sans";
   position: relative;
   height: 50px;
@@ -42,37 +41,41 @@ a {
   border: 0px;
   color: #004475;
   box-shadow: 0 0 1px #ccc;
-  -webkit-transition-duration: 0.7s;
+  -webkit-transition-duration: 0.5s;
   -webkit-transition-timing-function: linear;
   box-shadow: 0px 0 0 #004475 inset; }
 
-.btn-complete1:hover {
-  box-shadow: 100px 0 0 100px #004475 inset; }
+.btn-complete:hover {
+  box-shadow: 10px 0 0 100px #004475 inset; }
 
 /*PRODUCT CATEGORY CHOICE*/
-.container-cat {
-  padding: 10px 10px 10px 10px;
-  position: relative; }
-
 .row-cat {
   padding-bottom: 10px;
   position: inherit;
   display: inline-flex; }
 
-.container-cat img {
-  width: 250px;
-  height: 250px;
+.card-cat {
+  padding: 5px 5px 5px 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+
+.container-cat {
   position: relative; }
 
-.container-cat .choose-button {
+.container-cat img {
+  width: 300px;
+  height: 300px;
+  position: relative; }
+
+.container-cat .btn-cat {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: #004475;
+  font-family: "Open Sans";
   color: white;
-  font-size: 16px;
+  font-size: large;
   padding: 12px 24px;
   border: none;
   cursor: pointer;
@@ -80,44 +83,48 @@ a {
   opacity: 0.6;
   transition: 0.2s; }
 
-.container-cat .choose-button:hover {
-  background-color: #ffb910;
-  opacity: 1; }
+.container-cat .btn-cat:hover {
+  background-color: #012d4d;
+  opacity: 5; }
 
 /*PRODUCT CHOICE*/
+.row-prod {
+  padding: 10px 10px 10px 200px;
+  display: inline-flex; }
+
 .column-prod {
   float: left;
   width: 20%;
   margin-bottom: 16px;
-  padding: 0 8px; }
-
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%; } }
-
-.card-prod {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+  padding: 10px 10px 0px 0px; }
 
 .container-prod {
-  padding: 0 16px;
-  position: relative; }
-  .container-prod::after {
-    content: "";
-    clear: both;
-    display: table; }
+  padding: 0px 100px 10px 30px;
+  display: inline-block; }
 
-.row-prod::after {
-  content: "";
-  clear: both;
-  display: table; }
+.card-prod {
+  padding: 0px 100px 0px 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
 
 .title-prod {
-  color: grey; }
+  color: grey;
+  position: relative;
+  display: inline; }
 
 .container-prod img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   position: relative; }
+
+.container-prod .btn-choose {
+  position: absolute;
+  background-color: white;
+  color: #004475;
+  font-size: large;
+  padding: 12px 24px;
+  cursor: pointer;
+  border: 1px inset #004475;
+  border-radius: 1px; }
 
 /*DELIVERY CHOICE*/
 .container-del {
@@ -146,10 +153,11 @@ a {
 .text-footer {
   font-family: "Indie Flower";
   font-size: 13px;
-  padding: inherit; }
+  padding: inherit;
+  position: relative; }
 
 /*PROGRESS BAR*/
 .progress {
-  margin-top: 100px; }
+  margin-top: 30px; }
 
 /*# sourceMappingURL=style.css.map */

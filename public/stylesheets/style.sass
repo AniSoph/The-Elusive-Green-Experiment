@@ -1,15 +1,9 @@
-/*Define color palette*/
+/*Define color palette and fonts*/
 $bgcolor: transparent
 $color_main: #004475
 $color_btn: #004475
-//$color_2:
-//$color_3:
-
-/*Define color palette*/
 $font_header: 'Indie Flower'
 $font_main: 'Open Sans'
-//$font_extrainfo:
-
 
 body
   background-color: $bgcolor
@@ -19,9 +13,21 @@ body
   color: $color_main
   text-align: center
 
+
+h1
+  font-family: $font_main
+  font-size: xxx-large
+
 h2
   font-family: $font_main
   font-size: x-large
+
+
+a
+  font-family: $font_header
+  font-size: x-large
+  color: $color_main
+
 
 /*INDEX/INSTRUCTION*/
 
@@ -30,117 +36,109 @@ h2
   line-height: 1.8
   margin: 1px
 
-h1
-  font-family: $font_main
-  font-size: xxx-large
-
-a
-  font-family: $font_header
-  font-size: x-large
-  color: $color_main
-
 .text-muted
   font-family: $font_main
   font-size: medium
   padding: inherit
 
-.btn-complete1
-    font-family: $font_main
-    position: relative
-    height: 50px
-    width: 50%
-    background: #e2e6e9
-    margin: 20px
-    border: 0px
-    color: $color_btn
-    box-shadow: 0 0 1px #ccc
-    -webkit-transition-duration: 0.7s
-    -webkit-transition-timing-function: linear
-    box-shadow: 0px 0 0 $color_btn inset
+.btn-complete
+  font-family: $font_main
+  position: relative
+  height: 50px
+  width: 50%
+  background: #e2e6e9
+  margin: 20px
+  border: 0px
+  color: $color_btn
+  box-shadow: 0 0 1px #ccc
+  -webkit-transition-duration: 0.5s
+  -webkit-transition-timing-function: linear
+  box-shadow: 0px 0 0 $color_btn inset
 
-.btn-complete1:hover
-    box-shadow: 100px 0  0 100px $color_btn inset
+.btn-complete:hover
+ box-shadow: 10px 0  0 100px $color_btn inset
+
 
 /*PRODUCT CATEGORY CHOICE*/
-
-.container-cat
-  padding: 10px 10px 10px 10px
-  position: relative
 
 .row-cat
   padding-bottom: 10px
   position: inherit
   display: inline-flex
 
-// Make the image responsive
+.card-cat
+  padding: 5px 5px 5px 5px
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+
+.container-cat
+  position: relative
+
 .container-cat img
-   width: 250px
-   height: 250px
-   position: relative
+ width: 300px
+ height: 300px
+ position: relative
 
-// Style the button and place it in the middle of the container/image
-.container-cat .choose-button
-    position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
-    -ms-transform: translate(-50%, -50%)
-    background-color: $color_btn
-    color: white
-    font-size: 16px
-    padding: 12px 24px
-    border: none
-    cursor: pointer
-    border-radius: 5px
-    opacity: 0.6
-    transition: 0.2s
+.container-cat .btn-cat
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  -ms-transform: translate(-50%, -50%)
+  background-color: $color_btn
+  font-family: $font_main
+  color: white
+  font-size: large
+  padding: 12px 24px
+  border: none
+  cursor: pointer
+  border-radius: 5px
+  opacity: 0.6
+  transition: 0.2s
 
-.container-cat .choose-button:hover
-    background-color: #ffb910
-    opacity: 1
+.container-cat .btn-cat:hover
+  background-color: #012d4d
+  opacity: 5
 
 
 /*PRODUCT CHOICE*/
+
+.row-prod
+  padding: 10px 10px 10px 200px
+  display: inline-flex
 
 .column-prod
   float: left
   width: 20%
   margin-bottom: 16px
-  padding: 0 8px
+  padding: 10px 10px 0px 0px
 
-// Responsive layout - makes the two columns stack on top of each other instead of next to each other
-@media screen and (max-width: 600px)
-  .column
-    width: 100%
-
-// Add some shadows to create a card effect
-.card-prod
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
-
-// Some left and right padding inside the container
 .container-prod
-  padding: 0 16px
-  position: relative
+  padding: 0px 100px 10px 30px
+  display: inline-block
 
-  &::after
-    content: ""
-    clear: both
-    display: table
-
-// Clear floats
-.row-prod::after
-  content: ""
-  clear: both
-  display: table
+.card-prod
+  padding: 0px 100px 0px 0px
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
 
 .title-prod
   color: grey
+  position: relative
+  display: inline
 
-// Make the image responsive
 .container-prod img
-    width: 200px
-    height: 200px
-    position: relative
+  width: 150px
+  height: 150px
+  position: relative
+
+.container-prod .btn-choose
+ position: absolute
+ background-color: white
+ color: $color_main
+ font-size: large
+ padding: 12px 24px
+ cursor: pointer
+ border: 1px inset $color_btn
+ border-radius: 1px
 
 /*DELIVERY CHOICE*/
 
@@ -178,9 +176,10 @@ a
   font-family: $font-header
   font-size: 13px
   padding: inherit
+  position: relative
 
 
 /*PROGRESS BAR*/
 
 .progress
-  margin-top: 100px
+ margin-top: 30px
