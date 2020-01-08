@@ -143,11 +143,13 @@ a {
   float: left; }
 
 .container-del-treatment {
-  padding-top: 40px; }
+  padding-left: 30px;
+  padding-bottom: 30px; }
 
 .container-del-treatment img {
-  width: 30%;
-  height: 30%; }
+  width: 40%;
+  height: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
 
 .container-del-info .btn-choose {
   position: relative;

@@ -31,26 +31,26 @@
   <div class="container-del-choice">
     <h2>Meanwhile, did you know?</h2>
     <img class="img" id="Treatment" src="">
-    
+
   <!--Randomization part-->
   <script>
     $.ajax({
       url: 'http://localhost:8080/id'
     }).done(function (receiveUserId){
       console.log(receiveUserId);
-      
+
      /* $.ajax excesses the URl to see the local UserID
        .done will then call the callback function
     In here receiveUserId is a "placeholder" for ObjectId (in index.js file) */
-   
+
       var id = receiveUserId.id
       if (id%3 == 2) {
-        document.getElementById("Treatment").src = "images/Social_infl.jpg"
+        document.getElementById("Treatment").src = "images/Social_influence.jpg"
       } else if (id%3 == 0) {
-        document.getElementById("Treatment").src = "https://i.imgur.com/YKEDNMu.png"
+        document.getElementById("Treatment").src = "images/Info_influence.jpg"
       }
     });
-    
+
   /* In order to create 3 equally sized groups we used Modulo */
 
     /* ALTERNATIVE RANDOMIZATION:
@@ -63,7 +63,7 @@
     } else if (randomNr > 0.66) {
     document.getElementById("OtherpplChoice").src = "https://i.imgur.com/YKEDNMu.png"
     }; */
-    
+
 </script>
 </div>
 </div>
