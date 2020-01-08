@@ -7,7 +7,7 @@ var surveyJSON = {
    "elements": [
     {
      "type": "matrix",
-     "name": "Finally we have a few questions about yourself. Please indicate the degree to which you agree or disagree with the following statements",
+     "name": "Before we start, we have a few questions about you. Please indicate the degree to which you agree or disagree with the following statements",
      "columns": [
       {
        "value": "1",
