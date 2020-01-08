@@ -18,6 +18,35 @@
       <br>
       Nonetheless, we would like you to choose something that you're most likely to buy.
     </p>
+    
+    
+    <!-- <script>
+
+          /* We decided to redirect to one delivery page. An alternative (with a lot more code)
+          would have been to redirect to 3 different delivery pages. Each one being different according to the treatment.
+          (1page: without treatment; 2page: social influence treatment; 3page:informational influence treatment)
+          */
+
+          var randomNr = Math.random()
+
+          /* math.random asigns a random number to the var randomNr between 0 and 1 */
+
+          function directToTreatments() {
+                       if (randomNr <= 0.33) {
+                         window.location.href = 'http://localhost:8080/delivery';
+                       } else if (randomNr > 0.66) {
+                           window.location.href = 'http://localhost:8080/delivery/delivery_2';
+                       } else {
+                           window.location.href = 'http://localhost:8080/delivery/delivery_1';
+                       }; }
+                  </script>
+
+          /* function directToTreatments redirects to differet pages based on the if-condition
+          "   <button class="button" onclick="directToTreatments()">Choose</button>   "  */
+   -->
+
+    
+    
    <!-- Add 6 images in cards that contain a text and an additional button each-->
    <div class="row-prod">
      <div class="column-prod">
