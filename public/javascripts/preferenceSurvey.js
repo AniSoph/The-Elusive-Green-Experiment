@@ -1,147 +1,149 @@
 
 var surveyJSON = {
- "completedHtml": "<br>\n</br>",
- "pages": [
+ title: "Environmental Attitude",
+ completedHtml: "<br>",
+ pages: [
   {
-   "name": "page1",
-   "elements": [
+   name: "page1",
+   elements: [
     {
-     "type": "matrix",
-     "name": "Before we start, we have a few questions about you. Please indicate the degree to which you agree or disagree with the following statements",
-     "columns": [
+     type: "matrix",
+     name: "Finally we have a few questions about yourself. Please indicate the degree to which you agree or disagree with the following statements",
+     columns: [
       {
-       "value": "1",
-       "text": "Strongly Agree"
+       value: "Column 1",
+       text: "Strongly Agree"
       },
       {
-       "value": "2",
-       "text": "Mildly Agree "
+       value: "Column 2",
+       text: "Mildly Agree "
       },
       {
-       "value": "3",
-       "text": "Unsure"
+       value: "Column 3",
+       text: "Unsure"
       },
       {
-       "value": "4",
-       "text": "Mildly Disagree "
+       value: "Column 4",
+       text: "Mildly Disagree "
       },
       {
-       "value": "5",
-       "text": "Strongly Disagree"
+       value: "Column 5",
+       text: "Strongly Disagree"
       }
      ],
-     "rows": [
+     rows: [
       {
-       "value": "8",
-       "text": "The balance of nature is strong enough to cope with the impacts of modern industrial nations"
+       value: "Row 1",
+       text: "We are approaching the limit of the number of people the earth can support"
       },
       {
-       "value": "4",
-       "text": "Human ingenuity will insure that we do NOT make the earth unlivable"
+       value: "Row 2",
+       text: "Humans have the right to modify the natural environment to suit their needs"
       },
       {
-       "value": "5",
-       "text": "Humans are severely abusing the environment"
+       value: "Row 3",
+       text: "Humans are severely abusing the environment"
       },
       {
-       "value": "2",
-       "text": "Humans have the right to modify the natural environment to suit their needs"
+       value: "Row 4",
+       text: "Human ingenuity will insure that we do NOT make the earth unlivable"
       },
       {
-       "value": "3",
-       "text": "When humans interfere with nature it often produces disastrous consequences"
+       value: "Row 5",
+       text: "Plants and animals have as much right as humans to exist"
       },
       {
-       "value": "6",
-       "text": "The earth has plenty of natural resources if we just learn how to develop them"
+       value: "Row 6",
+       text: "When humans interfere with nature it often produces disastrous consequences"
       },
       {
-       "value": "7",
-       "text": "Plants and animals have as much right as humans to exist"
+       value: "Row 7",
+       text: "The earth has plenty of natural resources if we just learn how to develop them"
       },
       {
-       "value": "1",
-       "text": "We are approaching the limit of the number of people the earth can support"
+       value: "Row 8",
+       text: "The balance of nature is strong enough to cope with the impacts of modern industrial nations"
       }
      ],
-     "rowsOrder": "random",
-     "isAllRowRequired": true
+     isAllRowRequired: true
     }
    ],
-   "questionTitleLocation": "top",
-   "questionsOrder": "random"
+   questionsOrder: "random"
   },
   {
-   "name": "page2",
-   "elements": [
+   name: "page2",
+   elements: [
     {
-     "type": "matrix",
-     "name": "Please indicate the degree to which you agree or disagree with the following statements ",
-     "columns": [
+     type: "matrix",
+     name: "Please indicate the degree to which you agree or disagree with the following statements ",
+     columns: [
       {
-       "value": "1",
-       "text": "Strongly Agree"
+       value: "Column 1",
+       text: "Strongly Agree"
       },
       {
-       "value": "2",
-       "text": "Mildly Agree "
+       value: "Column 2",
+       text: "Mildly Agree "
       },
       {
-       "value": "3",
-       "text": "Unsure "
+       value: "Column 3",
+       text: "Unsure"
       },
       {
-       "value": "4",
-       "text": "Mildly Disagree"
+       value: "Column 4",
+       text: "Mildly Disagree "
       },
       {
-       "value": "5",
-       "text": "Strongly Disagree"
+       value: "Column 5",
+       text: "Strongly Disagree"
       }
      ],
-     "rows": [
+     rows: [
       {
-       "value": "1",
-       "text": "Despite our special abilities humans are still subject to the laws of nature"
+       value: "Row 1",
+       text: "Despite our special abilities humans are still subject to the laws of nature"
       },
       {
-       "value": "2",
-       "text": "The so-called “ecological crisis” facing humankind has been greatly exaggerated"
+       value: "Row 2",
+       text: "The so-called “ecological crisis” facing humankind has been greatly exaggerated"
       },
       {
-       "value": "3",
-       "text": "The earth is like a spaceship with very limited room and resources"
+       value: "Row 3",
+       text: "The earth is like a spaceship with very limited room and resources"
       },
       {
-       "value": "4",
-       "text": "Humans were meant to rule over the rest of nature"
+       value: "Row 4",
+       text: "Humans were meant to rule over the rest of nature"
       },
       {
-       "value": "5",
-       "text": "The balance of nature is very delicate and easily upset"
+       value: "Row 5",
+       text: "The balance of nature is very delicate and easily upset"
       },
       {
-       "value": "6",
-       "text": "Humans will eventually learn enough about how nature works to be able to control it"
+       value: "Row 6",
+       text: "Humans will eventually learn enough about how nature works to be able to control it"
       },
       {
-       "value": "7",
-       "text": "If things continue on their present course, we will soon experience a major ecological catastrophe"
+       value: "Row 7",
+       text: "If things continue on their present course, we will soon experience a major ecological catastrophe"
       }
      ],
-     "isAllRowRequired": true
+     isAllRowRequired: true
     }
    ],
-   "questionTitleLocation": "top",
-   "questionsOrder": "random"
+   questionsOrder: "random"
   }
  ],
- "showCompletedPage": false,
- "questionsOrder": "random",
- "showQuestionNumbers": "off",
- "pageNextText": "Complete",
- "completeText": "Complete",
+ showTitle: false,
+ showPageTitles: false,
+ showCompletedPage: false,
+ questionsOrder: "random",
+ showQuestionNumbers: "off",
+ pageNextText: "Complete"
 }
+       
+    
+    
 /* Send Ajax request to web server*/
 function sendDataToServer(survey) {
     window.location.href="http://localhost:8080/selectcategory";
