@@ -8,7 +8,7 @@ var surveyJSON = {
    elements: [
     {
      type: "matrix",
-     name: "Finally we have a few questions about yourself. Please indicate the degree to which you agree or disagree with the following statements",
+     name: "Please indicate the degree to which you agree or disagree with the following statements.",
      columns: [
       {
        value: "Column 1",
@@ -16,15 +16,15 @@ var surveyJSON = {
       },
       {
        value: "Column 2",
-       text: "Mildly Agree "
+       text: "2"
       },
       {
        value: "Column 3",
-       text: "Unsure"
+       text: "3"
       },
       {
        value: "Column 4",
-       text: "Mildly Disagree "
+       text: "4"
       },
       {
        value: "Column 5",
@@ -141,9 +141,9 @@ var surveyJSON = {
  showQuestionNumbers: "off",
  pageNextText: "Complete"
 }
-       
-    
-    
+
+
+
 /* Send Ajax request to web server*/
 function sendDataToServer(survey) {
     window.location.href="http://localhost:8080/selectcategory";

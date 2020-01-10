@@ -92,7 +92,7 @@ a {
 
 /*PRODUCT CHOICE PAGE*/
 .row-prod {
-  padding: 10px 10px 10px 325px;
+  padding: 10px 10px 10px 270px;
   display: inline-flex; }
 
 .column-prod {
@@ -105,7 +105,7 @@ a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
 
 .container-prod {
-  padding: 20px 20px 20px 10px;
+  padding: 20px 50px 20px 50px;
   display: inline-block;
   position: relative; }
 
@@ -116,7 +116,7 @@ a {
 
 .container-prod img {
   width: 150px;
-  height: 200px;
+  height: 180px;
   position: relative; }
 
 .container-prod .btn-choose {
@@ -182,7 +182,8 @@ a {
 .navbar-brand {
   color: #004475;
   font-family: "Indie Flower";
-  font-size: 36px; }
+  font-size: 36px;
+  float: left; }
 
 /*FOOTER*/
 .text-footer {
