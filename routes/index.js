@@ -3,6 +3,9 @@
 This enable us to export the routing logic as a module and use it in the main app.js.*/
 var express = require('express');
 var router = express.Router();
+var mongoose = require("mongoose");
+
+
 
 /*TREATMENT RANDOMIZATION*/
 
@@ -73,41 +76,39 @@ router.get('/delivery',function(req, res, next ) {
   res.render('productDeliveryChoice');
 });
 
+/*Final Feedback Survey page - GET REQUEST.*/
 
-/* REDIRECTION to different Treatment pages
-
-We chose to redirect everyone to one page and change the content of that page,
-with respect to the treatment group. An alterntive would have been to redirect to 3 different pages.
-
-Delivery Choice - TREATMENT 1 - GET REQUEST
-router.get('/delivery/delivery_1',function(req, res, next ) {
-  res.render('productDeliveryTreatment1');
+router.get('/surveyandfeedback',function(req, res, next) {
+  res.render('surveyAndFeedback');
 });
 
-/* Delivery Choice - TREATMENT 2 - GET REQUEST
-router.get('/delivery/delivery_2',function(req, res, next ) {
-  res.render('productDeliveryTreatment2');
-});*/
+var User = new mongoose.Schema({
+  country: String,
+  sex: String,
+  age: Number,
+  region: String,
+  firstName: String,
+  lastName: String,
+  email: String,
+  final: String
+});
+var User = mongoose.model("elusiveGreen", User);
 
-
-
-
-/*Final Feedback Survey page - GET REQUEST.*/
-router.get('/surveyandfeedback',function(req, res, next ) {
-  res.render('surveyAndFeedback');
+// To Process User Entries
+router.post("/survey2", (req, res) => {
+  var myData = new User(req.body);
+  myData.save()
+    .then(item => {
+      res.send("item saved to database");
+    })
+    .catch(err => {
+      res.status(400).send("unable to save to database");
+    });
 });
 
 /*Thank you page - GET REQUEST.*/
 router.get('/thankyou',function(req, res, next ) {
   res.render('thankYouPage');
 });
-
-/*router.post('/surveyResult',function(req, res, next ) {
-  db.collection('surveyResult'). save(req.body, (err, result) => {
-    if (err) return console.log(err)
-    console.log('saved to database')
-    res.redirect('/')
-  })
-});*/
 
 module.exports = router;

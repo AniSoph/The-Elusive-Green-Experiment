@@ -15,7 +15,7 @@
     <p>Finally, we have a few questions about you.</p>
     <br>
     <div class="container-feedback">
-      <form action="/action_page.php">
+      <form method="post" action="/survey2" id = "form2">
         <label for="country">Please enter your country of residence</label>
         <input type="text" id="country" name="country" placeholder="Your country..">
         <br>
@@ -28,52 +28,51 @@
         </select>
         <br>
         <br>
-        <label for="birth">What is your year of birth?</label>
-        <input type="number" min="1900" max="2018" step="1" placeholder="xxxx" /> <!--id?-->
+        <label for="age">What is your year of birth?</label>
+        <input type="number" id = "age" name = "age" min="1900" max="2018" step="1" placeholder="xxxx" /> <!--id?-->
         <br>
         <br>
         <label for="region">Do you live in an urban, rural or suburban region?</label>
-        <select id="region" name="country">
+        <select id="region" id="region" name="region">
           <option value="select">Please select</option>
           <option value="urban">Urban</option>
           <option value="rural">Rural</option>
           <option value="suburban">Suburban</option>
         </select>
         <br>
-        <br>
-        <hr> <!--  separating these two blocks with a line-->
+        <br> <!-- maybe separating these two blocks with a line-->
         <br>
         <p>In order to consider you for the lottery which allow you to win a voucher, please indicate your contact details.</p>
         <p>In case you win, we will contact you via email.</p>
         <br>
-        <label for="fname">First name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+        <label for="firstName">First name</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Your first name..">
         <br>
         <br>
-        <label for="lname">Last name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="lastName">Last name</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Your last name..">
         <br>
         <br>
         <label for="email">E-mail address</label>
-        <input type="text" id="mail" name="email_address" placeholder="Your email-address..">
+        <input type="text" id="mail" name="email" placeholder="Your email-address..">
         <br>
-        <br>
-        <hr> <!--  separating these two blocks with a line-->
+        <hr>
         <br>
         <label for="final">At last, we want to ask you if there is anything that you would like to share with us?</label>
         <br>
         <textarea id="final" name="final" placeholder="Write something.." style="height:150px; width:500px;">
         </textarea>
+        <button class="btn-complete" type="submit" form="form2" value="Submit" onclick="location.href ='http://localhost:8080/thankyou'">Complete</button>
       </form>
         </div>
       <br>
+      <hr>
       <br>
         <div class ="text-muted">
         <p>
           Please press the "Complete" button to submit your information and to finish the fictious online purchase process.
         </p>
       </div>
-    <button class="btn-complete" onclick="location.href ='http://localhost:8080/thankyou'">Complete</button>
 </div>
   <br>
   <div class="progress-feedback">
