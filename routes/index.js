@@ -72,8 +72,8 @@ router.get('/home',function(req, res, next ) {
 });
 
 /*Delivery Choice - GET REQUEST.*/
-router.get('/delivery',function(req, res, next ) {
-  res.render('productDeliveryChoice');
+router.get('/processing',function(req, res, next ) {
+  res.render('procecssing');
 });
 
 /*Delivery Choice - GET REQUEST.*/
