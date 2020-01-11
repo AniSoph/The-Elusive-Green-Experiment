@@ -76,6 +76,11 @@ router.get('/delivery',function(req, res, next ) {
   res.render('productDeliveryChoice');
 });
 
+/*Delivery Choice - GET REQUEST.*/
+router.get('/delivery',function(req, res, next ) {
+  res.render('productDeliveryChoice');
+});
+
 /*Final Feedback Survey page - GET REQUEST.*/
 
 router.get('/surveyandfeedback',function(req, res, next) {
@@ -95,11 +100,11 @@ var User = new mongoose.Schema({
 var User = mongoose.model("elusiveGreen", User);
 
 // To Process User Entries
-router.post("/survey2", (req, res) => {
+router.post('/survey2', (req, res) => {
   var myData = new User(req.body);
   myData.save()
     .then(item => {
-      res.send("item saved to database");
+      res.render('thankYouPage');
     })
     .catch(err => {
       res.status(400).send("unable to save to database");
