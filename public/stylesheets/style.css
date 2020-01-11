@@ -178,6 +178,17 @@ a {
   display: inherit;
   position: relative; }
 
+/*Inser line on the feedback page */
+  hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+  }
+
 /*HEADER*/
 .navbar-brand {
   color: #004475;
