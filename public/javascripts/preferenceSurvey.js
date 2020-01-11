@@ -134,6 +134,7 @@ var surveyJSON = {
    questionsOrder: "random"
   }
  ],
+ cookieName: "OnlyOnce",
  showTitle: false,
  showPageTitles: false,
  showCompletedPage: false,
