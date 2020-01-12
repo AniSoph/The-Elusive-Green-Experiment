@@ -1,7 +1,7 @@
 var defaultThemeColors = Survey
-    .StylesManager
-    .ThemeColors["default"];
-defaultThemeColors["$main-color"] = "#004475";
+  .StylesManager
+  .ThemeColors["default"];
+defaultThemeColors["$main-color"] = "#4a4a4a";
 defaultThemeColors["$main-hover-color"] = "#004475";
 defaultThemeColors["$text-color"] = "#4a4a4a";
 defaultThemeColors["$header-color"] = "#4a4a4a";

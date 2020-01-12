@@ -1,4 +1,3 @@
-
 // the main project folder
 var createError = require('http-errors');
 var express = require('express');
@@ -17,7 +16,9 @@ var app = express();
 // connect to MongoDB
 const MongoClient = require('mongodb').MongoClient;
 const uri = "mongodb+srv://akurdydy:helloworld@onlineexperiment-h1iao.mongodb.net/elusiveGreen?retryWrites=true&w=majority";
-const client = new MongoClient(uri, {useNewUrlParser: true});
+const client = new MongoClient(uri, {
+  useNewUrlParser: true
+});
 client.connect(err => {
   const collection = client.db("elusiveGreen").collection("elusiveGreen");
   // perform actions on the collection object
@@ -27,7 +28,9 @@ client.connect(err => {
 // get access to mongoose
 var mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb+srv://akurdydy:helloworld@onlineexperiment-h1iao.mongodb.net/elusiveGreen?retryWrites=true&w=majority",{useNewUrlParser: true});
+mongoose.connect("mongodb+srv://akurdydy:helloworld@onlineexperiment-h1iao.mongodb.net/elusiveGreen?retryWrites=true&w=majority", {
+  useNewUrlParser: true
+});
 //Get the default connection
 var db = mongoose.connection;
 //Bind connection to error event (to get notification of connection errors)
@@ -39,11 +42,15 @@ app.set('view engine', 'ejs'); // to specify the template library - EJS
 
 app.use(logger('dev'));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({
+  extended: false
+}));
 app.use(cookieParser());
 // convert the user input into JSON format for data storage
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 app.use(sassMiddleware({
   src: path.join(__dirname, 'public'),
   dest: path.join(__dirname, 'public'),

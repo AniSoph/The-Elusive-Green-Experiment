@@ -50,16 +50,17 @@
       }; */
     </script>
     <br>
-  </script>
- <script>
-    $(document).ready(function () {
-        // Handler for .ready() called.
-        window.setTimeout(function () {
-            location.href = "http://localhost:8080/delivery";
-        }, 15000);
-    });
     </script>
-    <button onclick="location.href ='http://localhost:8080/delivery'" class="btn-choose">Next</button>
+    <script>
+      $(document).ready(function() {
+        // Handler for .ready() called.
+        window.setTimeout(function() {
+          location.href = "http://localhost:8080/delivery";
+        }, 15000);
+      });
+    </script>
+    <button class="btn-next" onclick="location.href ='http://localhost:8080/delivery'">Next</button>
   </div>
 </body>
+
 </html>

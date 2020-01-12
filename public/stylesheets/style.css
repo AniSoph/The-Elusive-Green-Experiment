@@ -142,8 +142,7 @@ a {
   height: 40%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
 
-.btn-next {
-  float: right;
+.container-treatment .btn-next {
   position: relative;
   background-color: white;
   color: #004475;
@@ -153,7 +152,7 @@ a {
   border: 1px inset #004475;
   border-radius: 1px; }
 
-.btn-next:hover {
+.container-treatment .btn-next:hover {
   background-color: #012d4d;
   opacity: 5;
   color: white; }
@@ -224,6 +223,7 @@ a {
 
 /*FOOTER*/
 .text-footer {
+  color: #004475;
   font-family: "Indie Flower";
   font-size: 13px;
   padding: inherit;
@@ -234,8 +234,8 @@ a {
   margin-top: 30px;
   position: relative; }
 
-.progress[value]::-webkit-progress-bar {
-  background: #004475; }
+.progress-bar {
+  background-color: #004475; }
 
 .progress-feedback {
   margin-top: 900px; }
