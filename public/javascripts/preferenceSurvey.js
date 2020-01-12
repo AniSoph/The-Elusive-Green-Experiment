@@ -1,3 +1,4 @@
+
 var surveyJSON = {
   surveyId: '89cb778e-30b0-4296-b8ac-1e9dba8ba457',
   surveyPostId: '05d3b083-cb66-498f-9d28-112202924096'
@@ -148,7 +149,6 @@ var surveyJSON = {
  pageNextText: "Complete"
 }
 */
-
 
 /* Send Ajax request to web server*/
 function sendDataToServer(survey) {
