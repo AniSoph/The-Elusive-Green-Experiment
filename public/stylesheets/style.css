@@ -22,6 +22,7 @@ a {
 
 /*INDEX/INSTRUCTION PAGE*/
 .container-fluid {
+  text-align: left;
   position: sticky;
   line-height: 1.8;
   margin: 1px; }
@@ -92,34 +93,38 @@ a {
 
 /*PRODUCT CHOICE PAGE*/
 .row-prod {
-  padding: 10px 10px 10px 270px;
+  padding: 10px 10px 10px 200px;
   display: inline-flex; }
 
 .column-prod {
-  float: left;
+  float: center;
   width: 20%;
   padding: 10px 10px 0px 0px; }
 
 .card-prod {
   padding: 0px 100px 0px 0px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: grid; }
 
 .container-prod {
-  padding: 20px 50px 20px 50px;
-  display: inline-block;
-  position: relative; }
+  padding: 10px 150px 30px 70px;
+  display: inline-block; }
 
 .title-prod {
   color: grey;
-  position: relative;
   display: inline; }
 
 .container-prod img {
-  width: 150px;
-  height: 180px;
-  position: relative; }
+  float: center;
+  width: 120px;
+  height: 120px; }
 
-.container-prod .btn-choose {
+.container-prod-text {
+  float: center;
+  padding: 10px 10px 10px 10px; }
+
+.container-prod-text .btn-choose {
   position: relative;
   background-color: white;
   color: #004475;
@@ -129,7 +134,7 @@ a {
   border: 1px inset #004475;
   border-radius: 1px; }
 
-.container-prod .btn-choose:hover {
+.container-prod-text .btn-choose:hover {
   background-color: #012d4d;
   opacity: 5;
   color: white; }
