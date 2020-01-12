@@ -5,29 +5,26 @@ var express = require('express');
 var router = express.Router();
 var mongoose = require("mongoose");
 
-
-
 /*TREATMENT RANDOMIZATION*/
 
-/*Server creates initialise local UserId*/
+//Server creates initialise local UserId
 var id = 1;
-
-/*Create new User Id for the following participants*/
+//Create new User Id for the following participants
 function generateID () {
   id= id+1;
   return id;
-}
-/*Get local UserId from Server and send the ID to the Client*/
+};
+
+//Get local UserId from Server and send the ID to the Client
 router.get("/id", function(req,res,next) {
-/*Create variable with the specific ID*/
+//Create variable with the specific ID
   var HoldId = generateID()
-/*Create Object with all IDs
-id (key) : "HoldId" (value)*/
+//Create Object with all IDs
+//id (key) : "HoldId" (value)
    var ObjectId = { id : HoldId }
    res.send (ObjectId)
-/*Server responds and sends ID to the Client*/
+//Server responds and sends ID to the Client
 });
-
 
 /*PAGE RENDERING*/
 
@@ -71,9 +68,9 @@ router.get('/home',function(req, res, next ) {
   res.render('productChoiceHome');
 });
 
-/*Delivery Choice - GET REQUEST.*/
+/*Treatment - GET REQUEST.*/
 router.get('/processing',function(req, res, next ) {
-  res.render('procecssing');
+  res.render('processing');
 });
 
 /*Delivery Choice - GET REQUEST.*/
@@ -81,12 +78,13 @@ router.get('/delivery',function(req, res, next ) {
   res.render('productDeliveryChoice');
 });
 
-/*Final Feedback Survey page - GET REQUEST.*/
+/*Final Feedback Survey page - GET REQUEST & POST*/
 
 router.get('/surveyandfeedback',function(req, res, next) {
   res.render('surveyAndFeedback');
 });
 
+//Declare data structure - Schema using mongoose
 var User = new mongoose.Schema({
   country: String,
   sex: String,
@@ -97,9 +95,11 @@ var User = new mongoose.Schema({
   email: String,
   final: String
 });
+
+//Name the model
 var User = mongoose.model("elusiveGreen", User);
 
-// To Process User Entries
+//To process user entries and pass it to MongoDB
 router.post('/survey2', (req, res) => {
   var myData = new User(req.body);
   myData.save()
