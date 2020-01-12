@@ -10,14 +10,13 @@
 </head>
 <body style="margin: auto;">
   <header><% include ./header %></header>
-  <div class="container-del">
-    <div class="container-del-info">
-    <p>
-      We're currently saving your choice. This takes a few seconds.
-    </p>
-    <br>
-  </div>
-  <div class="container-del-treatment">
+    <div class="container-treat-info">
+      <h2>Saving your choice...</h2>
+      <p>
+        This takes a few seconds.
+      </p>
+    </div>
+  <div class="container-treatment">
     <img class="img" id="Treatment" src="">
     <!--Randomization part-->
     <script>
@@ -26,15 +25,17 @@
       }).done(function (receiveUserId){
         console.log(receiveUserId);
 
-       /* $.ajax excesses the URl to see the local UserID
-         .done will then call the callback function
-      In here receiveUserId is a "placeholder" for ObjectId (in index.js file) */
+       //$.ajax excesses the URl to see the local UserID
+      //.done will then call the callback function
+      //In here receiveUserId is a "placeholder" for ObjectId (in index.js file)
 
         var id = receiveUserId.id
         if (id%3 == 2) {
           document.getElementById("Treatment").src = "images/Social_influence.jpg"
         } else if (id%3 == 0) {
           document.getElementById("Treatment").src = "images/Info_influence.jpg"
+        } else {
+          document.getElementById("Treatment").style.display='none' // control group
         }
       });
 
@@ -52,15 +53,8 @@
       }; */
 
   </script>
-  <button class="btn-choose" onclick="location.href ='http://localhost:8080/delivery'">NEXT</button>
+  <br>
+  <button class="btn-next" onclick="location.href ='http://localhost:8080/delivery'">NEXT</button>
 </div>
-</div>
-<br>
-<br>
-<div class="progress">
-  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
-</div>
-<br>
-<footer><% include ./footer %></footer>
 </body>
 </html>
