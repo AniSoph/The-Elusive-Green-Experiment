@@ -1,60 +1,57 @@
 <!DOCTYPE html>
-<html lang = "en-US">
+<html lang="en-US">
+
 <head>
-  <title>DELIVERY</title>
+  <title>PROCESSING</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="/stylesheets/style.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/stylesheets/style.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
+
 <body style="margin: auto;">
   <header><% include ./header %></header>
-    <div class="container-treat-info">
-      <h2>Saving your choice...</h2>
-      <p>
-        This takes a few seconds.
-      </p>
-    </div>
+  <div class="container-treat-info">
+    <h2>Saving your choice...</h2>
+    <p>This takes a few seconds.</p>
+  </div>
+  <!--TREATMENT-->
   <div class="container-treatment">
     <img class="img" id="Treatment" src="">
-    <!--Randomization part-->
+    <!--RANDOMIZATION-->
     <script>
       $.ajax({
         url: 'http://localhost:8080/id'
-      }).done(function (receiveUserId){
+      }).done(function(receiveUserId) {
         console.log(receiveUserId);
-
-       //$.ajax excesses the URl to see the local UserID
-      //.done will then call the callback function
-      //In here receiveUserId is a "placeholder" for ObjectId (in index.js file)
-
+        //$.ajax excesses the URl to see the local UserID
+        //.done will then call the callback function
+        //In here receiveUserId is a "placeholder" for ObjectId (in index.js file)
         var id = receiveUserId.id
-        if (id%3 == 2) {
+        if (id % 3 == 2) {
           document.getElementById("Treatment").src = "images/Social_influence.jpg"
-        } else if (id%3 == 0) {
+        } else if (id % 3 == 0) {
           document.getElementById("Treatment").src = "images/Info_influence.jpg"
         } else {
-          document.getElementById("Treatment").style.display='none' // control group
+          document.getElementById("Treatment").style.display = 'none' // control group
         }
       });
-
-    /* In order to create 3 equally sized groups we used Modulo */
+      // In order to create 3 equally sized groups we used Modulo
 
       /* ALTERNATIVE RANDOMIZATION:
       Using following code we wouldn't need ajax and the generated UserID anymore.
       The only "issue" with this version is, that we can't guarantee for 3 equally sized groups.
-
       var randomNr = Math.random()
       if (randomNr <= 0.33) {
-      document.getElementById("OtherpplChoice").src = "https://www.sachaheck.net/blog/wp-content/uploads/2010/03/Grafik_Kuchenstueck.jpg"
+      document.getElementById("OtherpplChoice").src = ".jpg"
       } else if (randomNr > 0.66) {
-      document.getElementById("OtherpplChoice").src = "https://i.imgur.com/YKEDNMu.png"
+      document.getElementById("OtherpplChoice").src = ".jpg"
       }; */
-
-  </script>
-  <br>
-  <button class="btn-next" onclick="location.href ='http://localhost:8080/delivery'">NEXT</button>
-</div>
+    </script>
+    <br>
+    <button class="btn-next" onclick="location.href ='http://localhost:8080/delivery'">NEXT</button>
+  </div>
 </body>
+
 </html>

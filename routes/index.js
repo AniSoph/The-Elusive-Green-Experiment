@@ -1,4 +1,3 @@
-
 /*We are using the Router class.
 This enable us to export the routing logic as a module and use it in the main app.js.*/
 var express = require('express');
@@ -10,77 +9,79 @@ var mongoose = require("mongoose");
 //Server creates initialise local UserId
 var id = 1;
 //Create new User Id for the following participants
-function generateID () {
-  id= id+1;
+function generateID() {
+  id = id + 1;
   return id;
 };
 
 //Get local UserId from Server and send the ID to the Client
-router.get("/id", function(req,res,next) {
-//Create variable with the specific ID
+router.get("/id", function(req, res, next) {
+  //Create variable with the specific ID
   var HoldId = generateID()
-//Create Object with all IDs
-//id (key) : "HoldId" (value)
-   var ObjectId = { id : HoldId }
-   res.send (ObjectId)
-//Server responds and sends ID to the Client
+  //Create Object with all IDs
+  //id (key) : "HoldId" (value)
+  var ObjectId = {
+    id: HoldId
+  }
+  res.send(ObjectId)
+  //Server responds and sends ID to the Client
 });
 
 /*PAGE RENDERING*/
 
 /*Instructions - GET home page.*/
-router.get('/', function(req, res, next ) {
+router.get('/', function(req, res, next) {
   res.render('index');
 });
 
 /*Preferences Survey - GET REQUEST.*/
-router.get('/survey', function(req, res, next ) {
+router.get('/survey', function(req, res, next) {
   res.render('preferenceSurvey');
 });
 
 /*Product Category Selection page - GET REQUEST.*/
-router.get('/selectcategory',function(req, res, next ) {
+router.get('/selectcategory', function(req, res, next) {
   res.render('productCategory');
 });
 
 /*Product Choice Selection page - GET REQUEST.*/
-router.get('/selectproduct',function(req, res, next ) {
+router.get('/selectproduct', function(req, res, next) {
   res.render('productChoice');
 });
 
 /*Product Choice Clothing page - GET REQUEST.*/
-router.get('/clothing',function(req, res, next ) {
+router.get('/clothing', function(req, res, next) {
   res.render('productChoiceClothing');
 });
 
 /*Product Choice Electronics page - GET REQUEST.*/
-router.get('/electronics',function(req, res, next ) {
+router.get('/electronics', function(req, res, next) {
   res.render('productChoiceElectronics');
 });
 
 /*Product Choice Cosmetics page - GET REQUEST.*/
-router.get('/cosmetics',function(req, res, next ) {
+router.get('/cosmetics', function(req, res, next) {
   res.render('productChoiceCosmetics');
 });
 
 /*Product Choice Home page - GET REQUEST.*/
-router.get('/home',function(req, res, next ) {
+router.get('/home', function(req, res, next) {
   res.render('productChoiceHome');
 });
 
 /*Treatment - GET REQUEST.*/
-router.get('/processing',function(req, res, next ) {
+router.get('/processing', function(req, res, next) {
   res.render('processing');
 });
 
 /*Delivery Choice - GET REQUEST.*/
-router.get('/delivery',function(req, res, next ) {
+router.get('/delivery', function(req, res, next) {
   res.render('productDeliveryChoice');
 });
 
 /*Final Feedback Survey page - GET REQUEST & POST*/
 
-router.get('/surveyandfeedback',function(req, res, next) {
+router.get('/surveyandfeedback', function(req, res, next) {
   res.render('surveyAndFeedback');
 });
 
@@ -112,7 +113,7 @@ router.post('/survey2', (req, res) => {
 });
 
 /*Thank you page - GET REQUEST.*/
-router.get('/thankyou',function(req, res, next ) {
+router.get('/thankyou', function(req, res, next) {
   res.render('thankYouPage');
 });
 

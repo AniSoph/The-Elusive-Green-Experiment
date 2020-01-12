@@ -1,6 +1,5 @@
-
 var surveyJSON = {
-  surveyId:'89cb778e-30b0-4296-b8ac-1e9dba8ba457',
+  surveyId: '89cb778e-30b0-4296-b8ac-1e9dba8ba457',
   surveyPostId: '05d3b083-cb66-498f-9d28-112202924096'
 };
 
@@ -153,13 +152,13 @@ var surveyJSON = {
 
 /* Send Ajax request to web server*/
 function sendDataToServer(survey) {
-    window.location.href="http://localhost:8080/selectcategory";
+  window.location.href = "http://localhost:8080/selectcategory";
 }
 
 /*"new" will create the survey and store the information in the variable survey*/
 var survey = new Survey.Model(surveyJSON);
 
 $("#surveyContainer").Survey({
-    model: survey,
-    onComplete: sendDataToServer
+  model: survey,
+  onComplete: sendDataToServer
 });
