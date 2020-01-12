@@ -1,3 +1,17 @@
+var defaultThemeColors = Survey
+    .StylesManager
+    .ThemeColors["default"];
+defaultThemeColors["$main-color"] = "#004475";
+defaultThemeColors["$main-hover-color"] = "#004475";
+defaultThemeColors["$text-color"] = "#4a4a4a";
+defaultThemeColors["$header-color"] = "#7ff07f";
+
+defaultThemeColors["$header-background-color"] = "#4a4a4a";
+defaultThemeColors["$body-container-background-color"] = "#f8f8f8";
+
+Survey.
+StylesManager.
+applyTheme("default");
 
 var surveyJSON = {
   surveyId: '89cb778e-30b0-4296-b8ac-1e9dba8ba457',
@@ -5,7 +19,7 @@ var surveyJSON = {
 };
 
 
-/*var surveyJSON = {
+/*{
  title: "Environmental Attitude",
  completedHtml: "<br>",
  pages: [
@@ -14,7 +28,7 @@ var surveyJSON = {
    elements: [
     {
      type: "matrix",
-     name: "Please indicate the degree to which you agree or disagree with the following statements.",
+     name: "Before we start, we would like to know more about you. Your answers would contribute to the upcoming marketing strategy of our company.",
      columns: [
       {
        value: "Column 1",
@@ -22,15 +36,15 @@ var surveyJSON = {
       },
       {
        value: "Column 2",
-       text: "2"
+       text: "Mildly Agree "
       },
       {
        value: "Column 3",
-       text: "3"
+       text: "Unsure"
       },
       {
        value: "Column 4",
-       text: "4"
+       text: "Mildly Disagree "
       },
       {
        value: "Column 5",
@@ -72,6 +86,10 @@ var surveyJSON = {
       }
      ],
      isAllRowRequired: true
+    },
+    {
+     type: "html",
+     name: "question1"
     }
    ],
    questionsOrder: "random"
@@ -140,7 +158,6 @@ var surveyJSON = {
    questionsOrder: "random"
   }
  ],
- cookieName: "OnlyOnce",
  showTitle: false,
  showPageTitles: false,
  showCompletedPage: false,
