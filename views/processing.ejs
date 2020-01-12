@@ -50,8 +50,18 @@
       }; */
     </script>
     <br>
-    <button class="btn-next" onclick="location.href ='http://localhost:8080/delivery'">NEXT</button>
+  </script>
+ <script>
+    $(document).ready(function () {
+        // Handler for .ready() called.
+        window.setTimeout(function () {
+            location.href = "http://localhost:8080/delivery";
+        }, 12000);
+    });
+    </script>
+    <button onclick="location.href ='http://localhost:8080/delivery'" class="btn-complete">next</button>
   </div>
 </body>
-
 </html>
+
+}
