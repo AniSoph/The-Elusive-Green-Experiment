@@ -4,10 +4,10 @@ var defaultThemeColors = Survey
 defaultThemeColors["$main-color"] = "#004475";
 defaultThemeColors["$main-hover-color"] = "#004475";
 defaultThemeColors["$text-color"] = "#4a4a4a";
-defaultThemeColors["$header-color"] = "#7ff07f";
+defaultThemeColors["$header-color"] = "#4a4a4a";
 
-defaultThemeColors["$header-background-color"] = "#4a4a4a";
-defaultThemeColors["$body-container-background-color"] = "#f8f8f8";
+defaultThemeColors["$header-background-color"] = "white";
+defaultThemeColors["$body-container-background-color"] = "white";
 
 Survey.
 StylesManager.

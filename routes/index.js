@@ -71,7 +71,7 @@ router.get('/home', function(req, res, next) {
 
 /*Treatment - GET REQUEST.*/
 router.get('/processing', function(req, res, next) {
-  res.render('processing');
+  res.render('treatment');
 });
 
 /*Delivery Choice - GET REQUEST.*/

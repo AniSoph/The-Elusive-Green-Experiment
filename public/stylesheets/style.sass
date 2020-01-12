@@ -1,6 +1,6 @@
 /*Define color palette and fonts*/
 $bgcolor: transparent
-$color_main: #004475
+$color_main: #4a4a4a
 $color_btn: #004475
 $font_header: 'Indie Flower'
 $font_main: 'Open Sans'
@@ -239,7 +239,7 @@ a
 /*HEADER*/
 
 .navbar-brand
-  color: $color_main
+  color: $color_btn
   font-family: $font_header
   font-size: 36px
   float: left
@@ -259,6 +259,9 @@ a
 .progress
  margin-top: 30px
  position: relative
+
+.progress[value]::-webkit-progress-bar
+ background: $color_btn
 
 .progress-feedback
   margin-top: 900px
