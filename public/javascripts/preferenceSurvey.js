@@ -4,14 +4,15 @@ var defaultThemeColors = Survey
 defaultThemeColors["$main-color"] = "#4a4a4a";
 defaultThemeColors["$main-hover-color"] = "#004475";
 defaultThemeColors["$text-color"] = "#4a4a4a";
-defaultThemeColors["$header-color"] = "#4a4a4a";
+defaultThemeColors["$header-color"] = "#004475";
 
-defaultThemeColors["$header-background-color"] = "white";
-defaultThemeColors["$body-container-background-color"] = "white";
+defaultThemeColors["$header-background-color"] = "grey";
+defaultThemeColors["$body-container-background-color"] = "grey";
 
-Survey.
-StylesManager.
-applyTheme("default");
+Survey
+  .StylesManager
+  .applyTheme();
+
 
 var surveyJSON = {
   surveyId: '89cb778e-30b0-4296-b8ac-1e9dba8ba457',
@@ -167,15 +168,37 @@ var surveyJSON = {
 }
 */
 
-/* Send Ajax request to web server*/
+//Send Ajax request to web server
 function sendDataToServer(survey) {
   window.location.href = "http://localhost:8080/selectcategory";
 }
 
-/*"new" will create the survey and store the information in the variable survey*/
+// "new" will create the survey and store the information in the variable survey
 var survey = new Survey.Model(surveyJSON);
 
 $("#surveyContainer").Survey({
   model: survey,
   onComplete: sendDataToServer
 });
+
+// custom styling of the survey
+survey
+  .onUpdateQuestionCssClasses
+  .add(function(survey, options) {
+    var classes = options.cssClasses
+
+    classes.mainRoot += " sv_qstn";
+    classes.root = "sq-root";
+    classes.title += " sq-title"
+    classes.item += " sq-item";
+    classes.label += " sq-label";
+
+    if (options.question.isRequired) {
+      classes.title += " sq-title-required";
+      classes.root += " sq-root-required";
+    }
+
+    if (options.question.getType() === "checkbox") {
+      classes.root += " sq-root-cb";
+    }
+  });

@@ -48,6 +48,38 @@ a {
 .btn-complete:hover {
   box-shadow: 10px 0 0 100px #004475 inset; }
 
+/* PREFERENCE SURVEY PAGE*/
+.sv_qstn .sq-root {
+  text-align: left;
+  font-size: 15px;
+  font-family: "Open Sans"; }
+
+.sq-title {
+  font-family: "Open Sans";
+  padding-bottom: 40px; }
+
+.undefined {
+  font-size: 18px; }
+
+.sv_main span {
+  text-align: center; }
+
+.sv_next_btn {
+  position: inherit;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-family: "Open Sans";
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  opacity: 0.6;
+  transition: 0.2s; }
+
+.sv_next_btn:hover {
+  opacity: 5; }
+
 /*PRODUCT CATEGORY CHOICE PAGE*/
 .row-cat {
   margin: auto;
