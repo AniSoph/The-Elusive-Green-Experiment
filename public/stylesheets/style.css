@@ -84,6 +84,9 @@ a {
 .sv_next_btn:hover {
   opacity: 5; }
 
+.img-progress {
+  width: 100%; }
+
 /*PRODUCT CATEGORY CHOICE PAGE*/
 .row-cat {
   margin: auto;
