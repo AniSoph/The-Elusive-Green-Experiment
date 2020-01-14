@@ -3,11 +3,11 @@ var defaultThemeColors = Survey
   .ThemeColors["default"];
 defaultThemeColors["$main-color"] = "#4a4a4a";
 defaultThemeColors["$main-hover-color"] = "#004475";
-defaultThemeColors["$text-color"] = "#4a4a4a";
-defaultThemeColors["$header-color"] = "#004475";
+defaultThemeColors["$text-color"] = "#545e75";
+defaultThemeColors["$header-color"] = "#545e75";
 
-defaultThemeColors["$header-background-color"] = "grey";
-defaultThemeColors["$body-container-background-color"] = "grey";
+defaultThemeColors["$header-background-color"] = "white";
+defaultThemeColors["$body-container-background-color"] = "white";
 
 Survey
   .StylesManager
