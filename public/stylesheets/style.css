@@ -175,9 +175,9 @@ a {
   padding-bottom: 30px; }
 
 .container-treatment img {
-  width: 40%;
-  height: 40%;
-  box-shadow: 1px 0px 7px 10px #e6e6e6; }
+  width: 45%;
+  height: 45%;
+  margin-bottom: auto; }
 
 .btn-next {
   position: relative;
@@ -260,7 +260,7 @@ a {
   float: left; }
 
 .navbar-brand img {
-  margin-bottom: 10px; }
+  margin-bottom: 15px; }
 
 /*FOOTER*/
 .text-footer {
