@@ -48,6 +48,33 @@
       } else if (randomNr > 0.66) {
       document.getElementById("OtherpplChoice").src = ".jpg"
       }; */
+      
+      
+      
+      /* We decided to redirect to ONE delivery page. An alternative (with a lot more code)
+         would have been to redirect to 3 different delivery pages. Each one being different according to the treatment.
+        (1page: without treatment; 2page: social influence treatment; 3page:informational influence treatment)
+
+        With using 3 different delivery pages the randomization would have taken place on the productChoice-Pages while clicking
+        on the product one wants to purchase.
+        The code on each productPage would have been:
+        
+            function directToTreatments() {
+                         if (randomNr <= 0.33) {
+                           window.location.href = 'http://localhost:8080/delivery';
+                         } else if (randomNr > 0.66) {
+                             window.location.href = 'http://localhost:8080/delivery/delivery_2';
+                         } else {
+                             window.location.href = 'http://localhost:8080/delivery/delivery_1';
+                          }; }
+
+            // function directToTreatments redirects to differet pages based on the if-condition
+                   <button class="button" onclick="directToTreatments()">Choose</button>   */
+
+
+      
+      
+      
     </script>
     <br>
     </script>
