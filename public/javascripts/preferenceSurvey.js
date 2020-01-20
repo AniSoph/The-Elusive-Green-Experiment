@@ -170,7 +170,7 @@ var surveyJSON = {
 
 //Send Ajax request to web server
 function sendDataToServer(survey) {
-  window.location.href = "http://localhost:8080/selectcategory";
+  window.location.href = "selectcategory";
 }
 
 // "new" will create the survey and store the information in the variable survey
